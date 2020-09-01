@@ -1,0 +1,75 @@
+<!-- Intro   
+1. Wat   is   het   verschil   tussen   het   internet   en   het   world   wide   web?     
+
+Internet is een wereldwijd netwerk van netwerken, terwijl het web, formeel ook wel World Wide Web (www) genoemd, een verzameling informatie is die via internet toegankelijk is. 
+Een andere manier om naar dit verschil te kijken is; het internet is infrastructuur terwijl het web een dienst is bovenop die infrastructuur. 
+Als alternatief kan internet worden gezien als een grote boekwinkel, terwijl het web kan worden gezien als een verzameling boeken in die winkel. Op een hoog niveau kunnen we internet zelfs zien als hardware en het web als software!
+
+
+2. Wat   is   het   verschil   tussen   HTML,   CSS   en   JavaScript? 
+
+HTML (HyperText Markup Language) is geen programmeertaal; het is een opmaaktaal en hij wordt gebruikt om je browser te vertellen hoe de webpagina's die je bezoekt, moeten worden weergegeven
+Cascading Style Sheets (afgekort tot CSS), stijlbladen, zijn een mogelijkheid om de vormgeving van webpagina's los te koppelen van hun feitelijke inhoud en centraal vast te leggen.
+JavaScript is een veelgebruikte scripttaal (wel een programmeertaal) om webpagina's interactief te maken en webapplicaties te ontwikkelen.
+
+3. Wat   is   een   HTML   tag   en   een   HTML   element?   Hoe   open   je   een   HTML   tag   en   hoe   sluit   je   een   HTML   tag.   Maak   hiervoor   voorbeelden   en   leg   uit.
+
+Elementen kan je gebruiken om verschillende onderdelen van je inhoud te verpakken zodat die er op een bepaalde manier gaat uitzien of zich gedragen.
+Het element bestaat uit de tags en de content (inhoud).
+De tags (een ander woord voor labels of markeerders) die de tekst insluiten kunnen van een woord of een afbeelding een hyperlink naar ergens anders maken, ze kunnen woorden cursiveren, lettertypes vergroten of verkleinen enzovoort.
+
+<p>Dit is de inhoud van dit element</p>
+De tags zijn <p> opening tag) en </p> (closing tag). De closing tag heeft een slash forward (/)
+
+
+De belangrijkste onderdelen van ons element zijn:
+De opening tag: (het openingslabel) Deze bestaat uit de naam van het element (in dit geval p), ingesloten door kleiner- en groter-dan-tekens. <elementnaam> toont ons waar het element en zijn invloed op de inhoud begint. In dit geval duidt het het begin van de paragraaf aan.
+De closing tag:  (het eindlabel) Die is identiek aan de opening tag, behalve dat er ook nog een schuine streep voor de naam van het element staat. De schuine streep leunt naar voor en staat net achter <. Het eindlabel duidt het einde van het element aan, in dit geval dus het einde van de paragraaf.  Beginners vergeten de eindmarkeerder nogal eens en dat kan tot vreemde resultaten leiden.
+De content: (de inhoud) Dit is de inhoud van het element, in dit geval gewoon een regel tekst. 
+Het element: De openingsmarkeerder plus de eindmarkeerder plus de inhoud zijn gelijk aan het element.     
+
+
+4. HTML   gebruikt   basis   tags   om   structuur   op   te   bouwen.   De   <html>,   <head>   en   <body>.   
+Geef   voor   elke   element   aan   waarvoor   het   dient. 
+
+<html></html>: Het <html>-element. element sluit alle inhoud op de volledige pagina in en wordt ook het root-element genoemd. (root is het Engelse woord voor wortel).  
+<head></head>: Het <head>-element gedraagt zich als een container voor alle zaken die je in je HTML-pagina wil steken maar die niet tot de inhoud behoren die je aan de gebruikers wil tonen. 
+<body></body>: Het <body>-element bevat de volledige inhoud die je aan webgebruikers wil tonen als die je pagina bezoeken, of het nu  tekst is, afbeeldingen, videos, spelletjes, afspeelbare audiosporen (audio tracks in het Engels)  of wat dan ook.
+   
+
+
+5. Op   HTML   elementen   kun   je   attributen   gebruiken.   Wat   zijn   HTML   attributen   ?   Geef   minimaal   5   attributen   en   maak   voorbeelden   waar   je   de   attributen   in   toepast. 
+
+Attributen bevatten extra informatie over het element die je niet in de inhoud van dat element wil zien. Voorbeelden zijn class en id. Je kan ermee namen geven en
+ daarmee kan je het identificeren en er onder andere stijlinformatie op richten (CSS).
+Een attribuut bestaat uit:
+Een spatie tussen het attribuut en de elementnaam (of het vorige attribuut als het element al een of meer attributen heeft).
+De attribuutnaam, gevolgd door een is-gelijk-aan-teken (=).
+Een attribuutwaarde tussen aanhalingstekens. -->
+
+<p class="heading">lorem</p>
+
+href: het geef informatie over het web adres--> href="https://www.mozilla.org/".
+title: het geef informatie over the link, , title="The Mozilla homepage". 
+target: hoe ze link getoond wordt. target="_blank" zal de link tonen op een nieuw pagina. 
+language: Definieert de scripttaal die in het element wordt gebruikt.
+placeholder: Geeft de gebruiker een hint van wat er in het veld kan worden ingevoerd.
+
+
+6. Waarom   is   een   goede   HTML   Structuur   belangrijk?   Is deze   code een   goede   structuur?   Leg   uit.
+De browser heeft structuur nodig om te begrijpen wat is wat. Je code wordt door andere mensen gelezen. Daarom is het structuur heel belangrijk. 
+
+Het voorbeeld heeft geen tags. Het is gewoon plain text. Daarom is geen goede code. De browser weet niet wat is wat.     
+
+
+7. Wat   is   het   verschil   tussen   inline   en   block   elementen?
+Block-level elements form a visible block on a page. A block-level element appears on a new line following the content that precedes it. Any content that follows a block-level element also appears on a new line.//Elementen op blokniveau vormen een zichtbaar blok op de pagina — wat er ook aan vooraf ging, ze volgen op een nieuwe lijn en elke inhoud die erna komt zal ook op een nieuwe lijn staan. Zulke elementen zijn meestal structurele elementen in de pagina. <p> is een voorbeeld.
+
+Inline elements are contained within block-level elements, and surround only small parts of the document’s content.//Inline-elementen bestaan binnen elementen op blokniveau. Ze worden rond kleine delen van de inhoud geplaatst en dus niet rond volledige paragrafen en andere vormen van gegroepeerde inhoud. <em>
+
+
+8. Wat   betekent   nesting?   Codeer   een   voorbeeld   met   nesting   erin.
+Je kan elementen in andere elementen steken - we noemen dit nesten. Als we willen zeggen dat our cat VERY grumpy is, kunnen we het woord "very" in een <strong>-element insluiten. Dat zorgt ervoor dat het woord wordt beklemtoond:
+<p>My cat is <u>very</u> grumpy.</p>
+ 
+Elements can be placed within other elements. This is called nesting. If we wanted to state that our cat is very grumpy, we could wrap the word very in a <strong> element, which means that the word is to have strong(er) text formatting: 
