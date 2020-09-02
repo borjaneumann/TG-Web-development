@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1. Bij   het   inladen   van   een   bestand   is   het   noodzakelijk   om   de   locatie   van   het   bestand   aan   te   geven.   Dit   kan   op   2   manieren:
+    Wat   houden   deze   2   paths   in?     
+        ● Absolute   path: Antwoord: An absolute file path is the full URL to a file. https://techgrounds.nl/static/media/TG3.ff4c393e.png  
+        ● Relative   path: Antwoord: An absolute file path is the full URL to a file op je computer.     
+    
+    2.  Zoek   uit   welke   formaat   afbeeldingen   er   nog   meer   kan   zijn.
+    Antwoord: JPG, TIFF, PNG, GIF, EPS, RAW
+    
+    3. Zoek   uit   welke   browsers   er   zijn   en   maak   een   lijst   van   je   antwoord. -->
+
+    <ol>
+        <li>Google Chrome</li>
+        <li>Firefox Mozilla</li>
+        <li>Internet Explorer</li>
+        <li>Safari</li>
+        <li>Microsoft Edge</li>
+        <li>Opera</li>
+    </ol>
+
+    <!-- 4. Onderzoek   hoe   het   plaatsen   van   een   foto   gedaan   wordt   en   plaats   deze   boven   en   onderaan   je   website   door   zowel   gebruik   te   maken   van   de   absolute   path   en   relative   path. -->
+
+    <img src="https://techgrounds.nl/static/media/TG_Logo.d5934b2d.png" alt="Techgrounds logo absolute">
+    <h1>Mijn eerste website</h1>
+    <h2>Mijn eerste sub-kop</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum omnis eius molestias eum ducimus error repellendus, voluptas itaque quaerat nemo tempore voluptatibus. Possimus laborum neque vel totam labore similique consequuntur ex ullam harum? Itaque odio maiores quia, ut veritatis aliquid quam, vero mollitia hic libero provident numquam voluptatibus? Accusamus, minus ut in, cupiditate blanditiis iure est, possimus cum vel laboriosam reprehenderit quibusdam quaerat! Ea magni itaque unde veritatis nihil doloremque.</p>
+    
+    <h2>Mijn tweede sub-kop</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique harum et maiores nobis dolor, laudantium sequi voluptatum eveniet deleniti rem vel doloribus alias dolorum, molestias impedit, corrupti libero atque numquam quae! Itaque accusantium ad tempora quibusdam fugit? Dolores nisi error perspiciatis. Ad libero recusandae, perspiciatis repellendus sunt numquam est, nulla error dolorum harum mollitia ab totam autem impedit itaque veniam, assumenda vel deleniti labore neque consequatur ipsam ut unde. Error doloribus animi id dicta officiis?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate et iusto dolores nisi tempore eaque autem, eius voluptatum libero, fuga atque consectetur magni numquam saepe sint est vel debitis eum, sequi nostrum inventore animi facere modi illo! Sed et dolorum molestias sunt illo aspernatur ducimus numquam corporis tempora, quo unde omnis praesentium iusto nesciunt amet laudantium, sapiente fuga voluptatem ipsa libero pariatur facere voluptatum iure! Quod sit totam ut eum laborum doloremque veritatis est. Explicabo doloremque voluptatum ullam adipisci assumenda.</p>
+    <img src="./TG_Logo.d5934b2d.png" alt="Techgrounds logo relative">
+
+    <!-- 5. Wat   houdt   de   alt attribute   in?   En   waarom   is het   handig   om   de   alt attribuut   te   gebruiken?
+
+    Antwoord: Het geeft informatie over het beeld. Als het beeld niet goed oplaadt, krijg een tekst met informatie over het beeld.
+
+    6. Laadt   dit   bestand   in   als   een   audio   op   het   scherm. -->
+    <!-- 7. Speel   een   audio   bestand   af   met   <source>   tag.   Leg   uit   wat   hier   het   voordeel   van   is -->
+    <!-- 8. Zoek   een   willekeurig   video   en   sla   dit   op   in   je   computer.   Laadt   dit   bestand   in   als   een   video   op   het   scherm.  -->
+    <!-- Antwoord 7 & 8: met de source tag kun je aangeven welke format en type bestaan je wilt gebruiken. -->
+    
+    <audio controls autoplay loop >
+        <source src="./explosie.mp3" type="audio/mpeg">
+    </audio><br>
+
+    <video controls >
+        <source src="./sample-mp4-file.mp4" type="audio/mpeg">
+    </video>
+
+    <!-- 9. Maak   gebruik   van   de   verschillende   soorten   lijsten   om   het   volgende   resultaat   op   je   webpagina   weer   te   geven.  -->
+
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+            <ol>
+                <li>sub item 1</li>
+                <li>sub item 2</li>
+            </ol>
+        <li>item 3</li>
+    </ol>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+            <ul>
+                <li>sub item 1</li>
+                <li>sub item 2</li>
+            </ul>
+        <li>item3</li>
+    </ul>
+    <ul>
+        <li>item1</li>
+        <li>item2</li>
+            <ol>
+                <li>sub item 1</li>
+                <li>sub item 2</li>
+            </ol>
+        <li>item3</li>
+    </ul>
+
+    <!-- 10.Bouw   een   navigatiebalk   door   gebruik   te   maken   uit   een   lijst   dat   bestaat   uit   de   volgende   onderdelen:
+    ○ Tigers   ○ Lions   ○ Monkeys   ○ Hippopotaumus  -->
+    <ul>     
+        <li><a   href="#Tigers">Tiger</a></li>     
+        <li><a   href="#Lions">Lions</a></li>     
+        <li><a   href="#Monkeys">Monkeys</a></li>     
+        <li><a   href="#Hippopotaumus">Hippopotaumus</a></li>   
+    </ul>
+    <h2 id="Tigers">Tigers</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic, expedita exercitationem, alias velit assumenda quod nisi, voluptate laudantium quae voluptatum quam non praesentium debitis sint. Enim quis debitis odit eaque reiciendis incidunt dolorem obcaecati nostrum officiis magni libero nobis quia dolores tenetur doloribus consectetur velit distinctio repudiandae deserunt vero, sapiente corporis, dolore quaerat exercitationem. Excepturi, libero. Quo eaque, dolor ipsa eveniet autem expedita doloremque neque libero nisi illum quisquam!</p>
+    <h2 id="Lions">Lions</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic, expedita exercitationem, alias velit assumenda quod nisi, voluptate laudantium quae voluptatum quam non praesentium debitis sint. Enim quis debitis odit eaque reiciendis incidunt dolorem obcaecati nostrum officiis magni libero nobis quia dolores tenetur doloribus consectetur velit distinctio repudiandae deserunt vero, sapiente corporis, dolore quaerat exercitationem. Excepturi, libero. Quo eaque, dolor ipsa eveniet autem expedita doloremque neque libero nisi illum quisquam!</p>
+    <h2 id="Monkeys">Monkeys</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic, expedita exercitationem, alias velit assumenda quod nisi, voluptate laudantium quae voluptatum quam non praesentium debitis sint. Enim quis debitis odit eaque reiciendis incidunt dolorem obcaecati nostrum officiis magni libero nobis quia dolores tenetur doloribus consectetur velit distinctio repudiandae deserunt vero, sapiente corporis, dolore quaerat exercitationem. Excepturi, libero. Quo eaque, dolor ipsa eveniet autem expedita doloremque neque libero nisi illum quisquam!</p>
+    <h2 id="Hippopotaumus">Hippopotaumus</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae hic, expedita exercitationem, alias velit assumenda quod nisi, voluptate laudantium quae voluptatum quam non praesentium debitis sint. Enim quis debitis odit eaque reiciendis incidunt dolorem obcaecati nostrum officiis magni libero nobis quia dolores tenetur doloribus consectetur velit distinctio repudiandae deserunt vero, sapiente corporis, dolore quaerat exercitationem. Excepturi, libero. Quo eaque, dolor ipsa eveniet autem expedita doloremque neque libero nisi illum quisquam!</p>
+
+    
+
+
+
+</body>
+</html>

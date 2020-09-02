@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- html 
+    1. Maak   een   HTML   form   waarbij   de   gebruiker   zijn   naam   en   achternaam   in   kan   vullen.   Zie   hieronder   voor   een   voorbeeld: -->
+    
+
+    <h2>Form opdracht</h2>
+    <form action="">
+        <label for="achternaam">Achternaam:</label>
+        <input type="text" placeholder="achternaam"><br><br>
+        <label for="voornaam">Voornaam:&nbsp;&nbsp;&nbsp;</label>
+        <input type="text" placeholder="Voornaam"><br><br>
+
+        <label for="gender">Man:</label>
+        <input type="radio" value="man"  name="gender">
+        <label for="gender">Vrouw:</label>
+        <input type="radio" value="vrouw"  name="gender"><br><br>
+
+        <input type="checkbox" id="Salesforce" name="Salesforce" value="Salesforce">
+        <label for="Salesforce"> Saleforce</label><br>
+        <input type="checkbox" id="Cloud" name="Cloud" value="Cloud">
+        <label for="Cloud"> Cloud</label><br>
+        <input type="checkbox" id="Fullstack" name="Fullstack" value="Fullstack">
+        <label for="Fullstack"> Fullstack developer</label><br><br>
+
+        <label for="userPassword">Wachtwoord: </label>
+        <input id="userPassword" type="password"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email">
+        <input type="submit"><br><br>
+        <select id="dropdown"  name="Techground_locatie"><br>
+            <option value="Amsterdam">Amsterdam</option>
+            <option value="Rotterdam">Rotterdam</option>
+            <option value="Utrecht">Utrecht</option>
+            <option value="Den Haag">Den Haag</option>
+        </select><br><br>
+        <input type="date" value="2020-09-02"><br><br>
+
+        <label for="site-search">Search the internet:</label>
+        <input type="search" id="site-search" name="q"
+       aria-label="Search through site content"><br><br>
+
+       <label for="meeting-time">Techgrounds meeting (choose a time):</label>
+       <input type="time" id="meeting-time" name="meeting-time"
+       min="09:00" max="17:00" required><small> Vanaf 9u tot 5u</small>br><br><br>
+
+       <input type="hidden">
+
+        <input type="reset" name="reset" id="reset">
+    </form><br><br>
+
+    <!-- 4. Een   formulier   kun   je   ook   groeperen.   Zie   hieronder   voor   een   voorbeeld:  -->
+        <h2>Form Elementen Grouperen </h2>
+        <form action="/action_page.php">
+            <fieldset>
+             <legend>Persoons gegevens:</legend>
+             <label for="achternaam">Achternaam:</label>
+             <input type="text" id="achternaam" name="achternaam" placeholder="achternaam"><br><br>
+             <label for="voornaam">Voornaam:&nbsp;&nbsp;&nbsp;</label>
+             <input type="text" id="voornaam" name="voornaam"><br><br>
+             <label for="Geboorte">Geboorte Datum:</label>
+             <input type="date" id="Geboorte" name="Geboorte" placeholder="voornaam"><br><br>
+
+             <label for="gender">Man:</label>
+            <input type="radio" value="man"  name="gender">
+            <label for="gender">Vrouw:</label>
+            <input type="radio" value="vrouw" name="gender"><br><br>
+
+             <label for="postcode">Postcode:</label>
+             <input type="text" id="postcode" name="postcode" placeholder="postcode"><br><br>
+             <label for="adres">Adres:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+             <input type="text" id="adres" name="adres" placeholder="adres"><br><br> 
+            </fieldset>
+            <input type="submit" value="Submit">
+            <input type="reset" name="reset" id="reset" value="reset">
+           </form>
+
+
+
+    <!-- 6. We   hebben   nu   geleerd   hoe   je   dropdown   list,   radio   buttons   en   checkboxes   maak.   Dit   zijn   3   verschillende   manieren   om   de   gebruiker   een   keuze   te   laten   maken.   Benoem   voor   dropdown   list,   radio   buttons   en   checkboxes   een   situatie   waar   je   in   kan   gebruiken   en   leg   dat   uit?
+
+    Dropdown list: Voor meer dan een paar opties.
+    Radio buttons: Als alleen een van de opties gekozen moet worden.
+    checkboxes: voor een par opties. Anders dropdown. -->
+    
+    <!-- 7. Maak   een   reserveringsformulier   om   een   sport   te   reserveren.   In   dit   formulier   willen   we   graag   het   volgende   weten -->
+
+
+    <h2>Reserveringsformulier</h2>
+    <form action="">
+        <label for="naam">Naam:</label>
+        <input type="text" placeholder="Naam"><br><br>
+
+        <label for="lidmaatschap ">Lidmaatschap:</label>
+        <label for="lidmaatschap ">Ja</label>
+        <input type="radio" value="ja"  name="lidmaatschap ">
+        <label for="lidmaatschap ">Nee</label>
+        <input type="radio" value="Nee" name="lidmaatschap "><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email"><br><br>
+        
+
+        <label for="sports">Kies een sport:</label>
+        <select id="sports"  name="sports"><br>
+            
+            <option value="tafeltennis">Tafeltennis</option>
+            <option value="badminton ">Badminton </option>
+            <option value="squash ">Squash </option>
+        </select><br><br>
+
+        <label for="tijd">Kies de tijd:</label>
+        <input type="time" id="tijd" name="tijd" min="09:00" max="17:00" required><br><br>
+
+        <label for="datum">Kies het datum:</label>
+        <input type="date" id="datum" name="datum" placeholder="datum"><br><br>
+
+        <label for="Voorwarden "> Bent u akkord gegaan met de   reserveringsvoorwaardes:</label>
+        <label for="Voorwarden ">Ja</label>
+        <input type="radio" value="ja"  name="lidmaatschap ">
+        <label for="lidmaatschap ">Nee</label>
+        <input type="radio" value="Nee" name="lidmaatschap "><br><br>
+
+        <input type="submit"><br><br>
+
+    </form><br><br>
+
+    <!-- <h2>Boekformulier</h2>
+    <form action="">
+        <label for="naam">Naam:</label>
+        <input type="text" placeholder="Naam"><br><br>
+
+        <label for="lidmaatschap ">Lidmaatschap:</label>
+        <label for="lidmaatschap ">Ja</label>
+        <input type="radio" value="ja"  name="lidmaatschap ">
+        <label for="lidmaatschap ">Nee</label>
+        <input type="radio" value="Nee" name="lidmaatschap "><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" placeholder="email"><br><br>
+        
+
+        <label for="sports">Kies een sport:</label>
+        <select id="sports"  name="sports"><br>
+            
+            <option value="tafeltennis">Tafeltennis</option>
+            <option value="badminton ">Badminton </option>
+            <option value="squash ">Squash </option>
+        </select><br><br>
+
+        <label for="tijd">Kies de tijd:</label>
+        <input type="time" id="tijd" name="tijd" min="09:00" max="17:00" required><br><br>
+
+        <label for="datum">Kies het datum:</label>
+        <input type="date" id="datum" name="datum" placeholder="datum"><br><br>
+
+        <label for="Voorwarden "> Bent u akkord gegaan met de   reserveringsvoorwaardes:</label>
+        <label for="Voorwarden ">Ja</label>
+        <input type="radio" value="ja"  name="lidmaatschap ">
+        <label for="lidmaatschap ">Nee</label>
+        <input type="radio" value="Nee" name="lidmaatschap "><br><br>
+
+        <input type="submit"><br><br> -->
+        
+    </form><br><br>
+</body>
+</html>
