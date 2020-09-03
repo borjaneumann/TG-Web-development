@@ -30,26 +30,31 @@
         <label for="Fullstack"> Fullstack developer</label><br><br>
 
         <label for="userPassword">Wachtwoord: </label>
-        <input id="userPassword" type="password"><br><br>
+        <input id="userPassword" placeholder="wachtwoord"type="password"><br><br>
 
         <label for="email">Email:</label>
         <input type="email" placeholder="email">
         <input type="submit"><br><br>
+        <label for="Techground_locatie">Kies een stad:</label>
         <select id="dropdown"  name="Techground_locatie"><br>
             <option value="Amsterdam">Amsterdam</option>
             <option value="Rotterdam">Rotterdam</option>
             <option value="Utrecht">Utrecht</option>
             <option value="Den Haag">Den Haag</option>
         </select><br><br>
+
+        <label for="date">Kies een datum:</label>
         <input type="date" value="2020-09-02"><br><br>
+
+        <label for="meeting-time">Techgrounds meeting (choose a time):</label>
+       <input type="time" id="meeting-time" name="meeting-time"
+       min="09:00" max="17:00" required><small> Vanaf 9u tot 5u</small>br><br><br>
 
         <label for="site-search">Search the internet:</label>
         <input type="search" id="site-search" name="q"
        aria-label="Search through site content"><br><br>
 
-       <label for="meeting-time">Techgrounds meeting (choose a time):</label>
-       <input type="time" id="meeting-time" name="meeting-time"
-       min="09:00" max="17:00" required><small> Vanaf 9u tot 5u</small>br><br><br>
+       
 
        <input type="hidden">
 
@@ -64,7 +69,7 @@
              <label for="achternaam">Achternaam:</label>
              <input type="text" id="achternaam" name="achternaam" placeholder="achternaam"><br><br>
              <label for="voornaam">Voornaam:&nbsp;&nbsp;&nbsp;</label>
-             <input type="text" id="voornaam" name="voornaam"><br><br>
+             <input type="text" id="voornaam" placeholder="voornaam"name="voornaam"><br><br>
              <label for="Geboorte">Geboorte Datum:</label>
              <input type="date" id="Geboorte" name="Geboorte" placeholder="voornaam"><br><br>
 
@@ -132,43 +137,324 @@
 
     </form><br><br>
 
-    <!-- <h2>Boekformulier</h2>
+    <!-- 8. Maak   een   reserverings   formulier   om   een   boek   te   reserveren.   In   dit   formulier   willen   we   graag   het   volgende   weten: -->
+
+
+    <h2>Boeksformulier</h2>
+
     <form action="">
-        <label for="naam">Naam:</label>
+
+        <label for="naam">Naam:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
         <input type="text" placeholder="Naam"><br><br>
 
-        <label for="lidmaatschap ">Lidmaatschap:</label>
-        <label for="lidmaatschap ">Ja</label>
-        <input type="radio" value="ja"  name="lidmaatschap ">
-        <label for="lidmaatschap ">Nee</label>
-        <input type="radio" value="Nee" name="lidmaatschap "><br><br>
+        <label for="phone">Telefoon:</label>
+        <input type="tel" id="phone" placeholder="Telefoon"name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
 
-        <label for="email">Email:</label>
-        <input type="email" placeholder="email"><br><br>
-        
+        <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+        <input type="email" placeholder="Email"><br><br>
 
-        <label for="sports">Kies een sport:</label>
-        <select id="sports"  name="sports"><br>
+        <label for="boek">Aantal boeken:</label>
+        <select id="boek"  name="boek"><br>
             
-            <option value="tafeltennis">Tafeltennis</option>
-            <option value="badminton ">Badminton </option>
-            <option value="squash ">Squash </option>
+            <option value="boek1">1</option>
+            <option value="boek2 ">2</option>
+            <option value="boek3 ">3</option>
+            <option value="boek4 ">4</option>
+            <option value="boek5 ">5</option>
         </select><br><br>
 
-        <label for="tijd">Kies de tijd:</label>
-        <input type="time" id="tijd" name="tijd" min="09:00" max="17:00" required><br><br>
+        
 
-        <label for="datum">Kies het datum:</label>
-        <input type="date" id="datum" name="datum" placeholder="datum"><br><br>
+        <label for="naam">Naam van boek 1:</label>
+        <input type="text" placeholder="Naam"><br><br>
 
-        <label for="Voorwarden "> Bent u akkord gegaan met de   reserveringsvoorwaardes:</label>
-        <label for="Voorwarden ">Ja</label>
-        <input type="radio" value="ja"  name="lidmaatschap ">
-        <label for="lidmaatschap ">Nee</label>
-        <input type="radio" value="Nee" name="lidmaatschap "><br><br>
+        <label for="naam">Naam van boek 2:</label>
+        <input type="text" placeholder="Naam"><br><br>
 
-        <input type="submit"><br><br> -->
+        <label for="naam">Naam van boek 3:</label>
+        <input type="text" placeholder="Naam"><br><br>
+
+        <label for="naam">Naam van boek 4:</label>
+        <input type="text" placeholder="Naam"><br><br>
+
+        <label for="naam">Naam van boek 5:</label>
+        <input type="text" placeholder="Naam"><br><br>
+
+        <input type="submit"><br><br>
         
     </form><br><br>
+
+    <!-- 9. Bouw   nu   zelf   een   formulier   met   wat   je   hiervoor   hebt   geleerd.  -->
+    <h2>Extra Formulier Opdracht// Travel Website Reservering</h2>
+
+    <form action="">
+        <fieldset>
+            <legend>Persoonlijke Gegevens</legend>
+            <label for="naam">Naam:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" placeholder="Naam"><br><br>
+
+            <label for="phone">Telefoon:</label>
+            <input type="tel" id="phone" placeholder="Telefoon"name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+
+            <label for="email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="email" placeholder="Email"><br><br>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Reserveringsdetails</legend>
+            <label for="aantal_pers">Aantal Persoons Reservering:</label>
+            <select id="aantal_pers"  name="aantal_pers"><br>
+                
+                <option value="persoon1">1</option>
+                <option value="persoon2 ">2</option>
+                <option value="persoon3 ">3</option>
+                <option value="persoon4 ">4</option>
+                <option value="persoon5 ">5</option>
+            </select><br><br>
+
+            <label for="bestemming">Kies een stad:</label>
+            <select id="bestemming"  name="bestemming"><br>
+                
+                <option value="Amsterdam">Amsterdam</option>
+                <option value="Rotterdam ">Rotterdam </option>
+                <option value="Utrecht ">Utrecht </option>
+                <option value="Leiden ">Leiden </option>
+                <option value="Den Haag ">Den Haag </option>
+                <option value="Delft ">Delft </option>
+            </select><br><br>
+
+            <label for="date">Kies een datum:</label>
+            <input type="date" value="2020-09-02"><br><br>
+
+            <label for="meeting-time">Kies arrival time:</label>
+        <input type="time" id="meeting-time" name="meeting-time"
+        min="00:00" max="24:00" required><br><br>
+        </fieldset><br><br>
+
+        <fieldset>
+            <legend>Betalingsmethode</legend>
+            <label for="betaling">Kies de betaling methode: </label>
+            <label  for="creditcard">Credit Card</label>
+            <input type="radio" id="betaling"value="creditcard"  name="betaling">
+            <label for="Contant">Contant</label>
+            <input type="radio" id="betaling" value="Contant"  name="betaling">
+
+            <label for="Ideal">Ideal</label>
+            <input type="radio" id="betaling" value="Ideal"  name="betaling"><br><br>
+
+        </fieldset><br><br>
+        <input type="submit"><br><br>   
+    </form><br><br>
+
+    <!-- 10.Om   een   tabel   te   maken   heb   je   volgende   elementen   nodig:  
+ 
+    ● <table>   het defineert een HTML tabel
+    ● <thead>   heading van de tabel
+    ● <tbody>   body van de tabel
+    ● <tfoot>   foot van de tabel
+    ● <th>      rows
+    ● <tr>      columns
+    ● <td>      table data (het inhoud van de cell)
+        
+    Geef   voor   elke   element   een   deﬁnitie.  -->
+
+    <!-- 11.Maak   een   tabel   met   <table>   element.   Zie   hieronder:  -->
+    <h2>Tabel Opdracht 11</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Voornaam</th>
+                <th>Achternaam</th>
+                <th>Leeftijd</th>
+                <th>Telefoonnr</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>41</td>
+                <td>+31 12345678</td>
+            </tr>
+            <tr>
+                <td>Steven</td>
+                <td>Smith</td>
+                <td>32</td>
+                <td>+31 12345678</td>>
+            </tr>
+            <tr>
+                <td>Alexander</td>
+                <td>Beave</td>
+                <td>16</td>
+                <td>+31 12345678</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 12.Maak   een   tabel   met   <table>   element.   Zie   hieronder:  -->
+    <h2>Tabel Opdracht 12</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>MA</th>
+                <th>DI</th>
+                <th>WO</th>
+                <th>DO</th>
+                <th>VR</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Afspraak met tandarts</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>Sporten</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>huiswerk maken</td>
+                <td>Werken</td>
+                <td>Werken</td>
+            </tr>
+            <tr>
+                <td>Afspraak met tandarts</td>
+                <td></td>
+                <td></td>
+                <td>Werken</td>
+                <td>Bij vrienden</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- 13.Maak   een   tabel   met   <table>   element.   Zie   hieronder:  -->
+        <h2>Tabel Opdracht 13</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Sport</th>
+                    <th>Aantal recreanten</th>
+                    <th>Aantal competitie</th>
+                    <th>Totale deelnemers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Racket sport</td>
+                    <td>Badminton</td>
+                    <td>10</td>
+                    <td>30</td>
+                    <td>40</td>   
+                </tr>
+                <tr>
+                    
+                    <td>Tafeltenis</td>
+                    <td>59</td>
+                    <td>30</td>
+                    <td>89</td>
+                </tr>
+                <tr>    
+                    <td>Tennis</td>
+                    <td>159</td>
+                    <td>130</td>
+                    <td>189</td>    
+                </tr>
+                <tr>
+                    <td rowspan="3">Ball sport</td>
+                    <td>Voetbal</td>
+                    <td>88</td>
+                    <td>40</td>
+                    <td>128</td>   
+                </tr>
+                <tr>   
+                    <td>Basketbal</td>
+                    <td>60</td>
+                    <td>40</td>
+                    <td>100</td>
+                </tr>
+                <tr> 
+                    <td>Volleybal</td>
+                    <td>35</td>
+                    <td>20</td>
+                    <td>55</td>    
+                </tr>
+            </tbody>
+        </table>
+    <!-- 14.Maak   Maak   nu   zelf   een   tabel   met   de   elementen   die   je   hiervoor   hebt   geleerd  -->
+        <h2>Tabel Opdracht 14// Maak je eigen Tabel</h2>
+        <table>
+        <caption>Sports Schedule</caption>
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>Maandag</th>
+                    <th>Dinsdag</th>
+                    <th>Woensdag</th>
+                    <th>Donderdag</th>
+                    <th>Vrijdag</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td rowspan="3">Niveau 1</td>
+                    <td>Badminton</td>
+                    <td>Vrij</td>
+                    <td>Tafeltenis</td>
+                    <td>Basketbal</td>   
+                    <td>Tafeltenis</td>   
+                </tr>
+                <tr>
+                    
+                    <td>Tafeltenis</td>
+                    <td>Voetbal</td>
+                    <td>Badminton</td>
+                    <td>vrij</td>
+                    <td>vrij</td>
+                </tr>
+                <tr>    
+                    <td>Tennis</td>
+                    <td>Tafeltenis</td>
+                    <td>Voetbal</td>
+                    <td>Badminton</td>    
+                    <td>Badminton</td>    
+                </tr>
+                <tr>
+                    <td rowspan="3">Niveau 2</td>
+                    <td>Voetbal</td>
+                    <td>Tafeltenis</td>
+                    <td>Basketbal</td>
+                    <td>Badminton</td>   
+                    <td>Basketbal</td>   
+                </tr>
+                <tr>   
+                    <td>Basketbal</td>
+                    <td>Vrij</td>
+                    <td>vrij</td>
+                    <td>Badminton</td>
+                    <td>Voetbal</td>
+                </tr>
+                <tr> 
+                    <td>Volleybal</td>
+                    <td>Basketbal</td>
+                    <td>Vrij</td>
+                    <td>Voetbal</td>    
+                    <td>Badminton</td>    
+                </tr>
+                
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Sporten per dag</td>
+                    <td>6</td>
+                    <td>5</td>
+                    <td>4</td>
+                    <td>4</td>
+                    <td>5</td>
+                </tr>
+            </tfoot>
+        </table>
+
+
 </body>
 </html>
