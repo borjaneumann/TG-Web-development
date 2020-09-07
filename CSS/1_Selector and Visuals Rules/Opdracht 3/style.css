@@ -1,0 +1,14 @@
+/* type selector */
+h2 {
+    color: red;
+}
+/* descendant selector */
+ul li {
+    font-size: 2rem;
+    color: green;
+}
+/* class selector  */
+
+.darkcolor {
+    color: brown;
+}

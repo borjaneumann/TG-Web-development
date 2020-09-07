@@ -1,0 +1,9 @@
+div~p {
+    background: red;
+}
+div>p {
+    color: blue;
+}
+div+p {
+    font-size: 1.5rem;
+}
