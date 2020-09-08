@@ -1,0 +1,35 @@
+.box-one {
+    width: 100px;
+    height: 100px;
+    background-color: orangered;
+    border: 2px black solid;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+}
+.box-two {
+    width: 100px;
+    height: 100px;
+    background-color: orchid;
+    border: 2px black solid;
+    margin-left: 1rem;
+}
+.box-three {
+    width: 100px;
+    height: 100px;
+    background-color: purple;
+    padding: 2rem;
+    margin: 2 rem;
+    border: 2px red solid;
+    margin-left: -1rem;
+
+}
+.box-four {
+    
+    width: 100px;
+    height: 100px;
+    background-color: magenta;
+    box-sizing: border-box;
+    border: 7px black solid;
+    padding-top: 1rem;
+    margin: auto;
+}

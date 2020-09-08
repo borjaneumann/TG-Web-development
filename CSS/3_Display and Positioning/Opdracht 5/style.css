@@ -1,0 +1,11 @@
+img {
+    width: 400px;
+    position: absolute;
+    top: 70px;   
+    z-index: -1;    
+}
+h2, p{
+    color: white;
+    z-index: 0;
+    margin-left: 1rem;
+}

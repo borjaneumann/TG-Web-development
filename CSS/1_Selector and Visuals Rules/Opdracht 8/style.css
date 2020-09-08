@@ -1,0 +1,27 @@
+/* cascade */
+p  {
+    text-decoration-line: underline;
+}
+#cascade {
+    text-decoration-line: none;
+}
+.inheritance {
+    text-decoration-line: none;
+}
+
+/* inheritance */
+/* padding beinvloedt niet de li elementen */
+ul {
+    
+    padding: 2rem;
+       
+}
+ul li{
+    color: red !important;
+}
+ul li {
+    font-style: italic;
+    color: blue;
+
+}
+
