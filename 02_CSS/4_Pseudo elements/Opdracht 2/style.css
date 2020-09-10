@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;   
+}
+li {
+    background: grey;
+    color: white;
+}
+
+}
+video::cue-region {
+    color: yellow;
+}
+
+p.firstletter:first-letter {
+    color: red;
+}
+
+p.firstline::first-line { 
+    color: red;
+}
+p.error::grammar-error {
+    text-decoration: crimson;
+    color: green;
+}
+ol.marker::marker {
+    color: red;
+    font-size: 1.5em;
+}
+/* this space is reserved for part */
+
+input::placeholder {
+    color: turquoise;
+}
+p.seleccion::selection {
+    background: red;
+    color: gold;
+}
+template::slotted(ul) {
+    font-weight: bold;
+    color: red;
+}
+p.spelling:spelling-error {
+    text-decoration: wavy red;
+    
+}

@@ -1,0 +1,23 @@
+div {
+    border: 1px black solid;
+    width: 480px;
+    height: 270px;    
+    position: relative;
+    
+}
+img {
+    opacity: 0.4;
+}
+p {
+    position: absolute;
+    text-align: center;
+    
+}
+p::before {
+    position: absolute;
+    content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid numquam ipsa nobis voluptatem quas officiis maiores blanditiis similique, assumenda in amet officia perferendis reiciendis. Numquam dolore animi ea a sunt nulla dolorem! Deserunt ut quis consequatur voluptatem temporibus molestiae earum! Esse deserunt officia cum explicabo incidunt facilis tempore nostrum obcaecati?";
+    
+    z-index: 2;
+    width: 430px;
+    
+}

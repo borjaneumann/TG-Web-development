@@ -1,0 +1,26 @@
+img {
+    width:700px;
+    position: relative;
+    text-align: center;
+}
+.container {
+    position: relative;
+    width: 700px;
+    
+}
+.paragraph-1 {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 70px;
+    left: 50px;
+    color: white;
+}
+.paragraph-2 {
+    font-size: 1.5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    top: 70px;
+    right: 30px;   
+    color: white;
+}

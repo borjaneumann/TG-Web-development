@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/02_CSS/4_Pseudo elements/Opdracht 2/style.css">
+</head>
+<body>
+    <h1>Opdracht 2 and 3</h1>
+    <ol>
+        <li>Cue Region</li>
+        <p>Het :: cue-region CSS pseudo-element komt overeen met WebVTT-cues binnen een geselecteerd element. Dit kan worden gebruikt om bijschriften en andere aanwijzingen in media te stylen met VTT-tracks.</p>
+        <h4>Voorbeeld</h4>
+        <video src="/02_CSS/4_Pseudo elements/Media/sample-mp4-file.mp4" width="auto" height="auto" controls> <track src="/02_CSS/4_Pseudo elements/Media/sample3.vtt"> 
+        </video><br><br>
+
+
+        <li>First-letter</li>
+        <p>Het first-letter pseudo-element wordt gebruikt om een speciale stijl toe te voegen aan de eerste letter van een tekst.</p>
+        <h4>Voorbeeld</h4>
+        <p class="firstletter">Het eerste letter moet rood zijn</p>
+
+        <li>First-Line</li>
+        <p>Het :: first-line CSS pseudo-element past stijlen toe op de eerste regel van een block-level element. Merk op dat de lengte van de eerste regel van veel factoren afhangt, waaronder de breedte van het element, de breedte van het document en de lettergrootte van de tekst.</p>
+        <h4>Voorbeeld</h4>
+        <p  <p class="firstline">Het eerste lijn moet rood zijn. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit voluptates fugiat voluptatem cum tenetur, quo molestiae dignissimos necessitatibus reiciendis ipsam modi, ipsa eveniet rem, quos odit. Eum minima aut fugiat exercitationem vero numquam autem est asperiores inventore, consequatur dignissimos at doloremque laboriosam ratione quibusdam quasi hic, corrupti sunt eius! Omnis!</p>
+        
+
+        <li>Grammar error</li>
+        <p>Het :: grammar-error CSS-pseudo-element vertegenwoordigt een tekstsegment dat door de user-agent als grammaticaal incorrect is gemarkeerd.</p>
+        <p>This is an experimental technology</p>
+        <h4>Voorbeeld</h4>
+        <p class="error">My friends is coming to the party tonight.</p>
+
+        <li>Marker</li>
+        <p>Het :: marker pseudo-element in CSS selecteert het markeringsvak van een element uit de lijst, dat meestal een opsommingsteken of een cijfer bevat. Het werkt op elk element of pseudo-element dat is geconfigureerd voor display: list-item, zoals het &lt;li&gt:en <summary> element.</p>
+        <h4>Voorbeeld</h4>
+        <ol class="marker">
+            <li>Duraznos</li>
+            <li>Manzanas</li>
+            <li>Ciruelas</li>
+        </ol><br>
+
+        <li>Part&lpar;&rpar;</li>
+        <p>Het :: part CSS pseudo-element vertegenwoordigt elk element binnen een schaduwboom dat een overeenkomend part-attribuut heeft.</p>
+        <h4>Voorbeeld</h4>
+        
+
+        <li>Placeholder</li>
+        <p>Het CSS :: placeholder pseudo-element vertegenwoordigt de tijdelijke tekst in een &lt;input&gt;  element of een &lt;textarea&gt;  element.</p>
+        <h4>Voorbeeld</h4>
+        <input type="text" placeholder="Het gaat om deze tekst"><br><br>
+
+        <li>Selection</li>
+        <p>Het pseudo-element selector :: selection CSS past regels toe op een gedeelte van een document dat door de gebruiker is gemarkeerd (bijvoorbeeld: selectie met de muis of een andere aanwijzer op een apparaat).
+        Slechts een kleine subset van CSS-eigenschappen kan worden gebruikt in een :: selectieregel op de selector voor: kleur, achtergrond, achtergrondkleur en tekstschaduw. Merk op dat in het bijzonder achtergrondafbeelding wordt genegeerd, net als elke andere eigenschap.</p>
+        <h4>Voorbeeld</h4>
+        <p class="seleccion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quos nihil dignissimos modi omnis error eum nulla sunt excepturi animi.</p>
+
+        <li>Slotted&lpar;&rpar;</li>
+        <p>The ::slotted&lpar;&rpar; Het :: slotted () CSS-pseudo-element vertegenwoordigt elk element dat in een sleuf in een HTML-sjabloon is geplaatst (zie Sjablonen en sleuven gebruiken voor meer informatie).
+        Dit werkt alleen bij gebruik binnen CSS geplaatst in een schaduw-DOM. Merk ook op dat deze selector geen tekstknooppunt selecteert dat in een sleuf is geplaatst; het richt zich alleen op feitelijke elementen.</p>
+        <h4>Voorbeeld</h4>
+        <template>   
+            <div>
+                <h2>Personal ID Card</h2>
+                <slot name="person-name">NAME MISSING</slot>
+                <ul>
+                <li><slot name="person-age">AGE MISSING</slot></li>
+                <li><slot name="person-occupation">OCCUPATION MISSING</slot></li>
+                </ul>
+            </div><br><br>
+        </template> 
+        
+
+
+        <li>Spelling error</li>
+        <p>Het :: spelling-error CSS pseudo-element vertegenwoordigt een tekstsegment dat door de user-agent is gemarkeerd als onjuist gespeld.</p>
+        <h5>Allowable properties</h5>
+        <p>color, background-color, cursor, caret-color, outline and its longhands, text-decoration and its associated properties, text-emphasis-color, text-shadow</p>
+        <h4>Voorbeeld</h4>
+        <p class="spelling" contenteditable spellcheck="true">My friends are groedjsld</p>
+        <track src="/02_CSS/4_Pseudo elements/Media/sample.vtt">
+        
+        
+    </ol>
+
+    
+</body>
+</html>

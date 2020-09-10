@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/02_CSS/4_Pseudo elements/Opdracht 1/style.css">
+   
+</head>
+<body>
+    <h1>Opdracht 1 and 3</h1>
+    <h2>Pseudo elementen</h2>
+    <ol>
+        <li>After</li>
+        <p >:: after maakt een pseudo-element aan dat het laatste kind is van het geselecteerde element. Het wordt vaak gebruikt om cosmetische inhoud toe te voegen aan een element met de eigenschap inhoud. Het is standaard inline. De content moet gegeven worden</p>
+        <h4>Voorbeeld</h4>
+        <p class="after">Dit is een Voorbeeld tekst</p>
+
+        <li>Backdrop</li>
+        <p>Het :: backdrop CSS pseudo-element is een box ter grootte van de viewport die direct wordt weergegeven onder elk element dat in volledig scherm wordt gepresenteerd. Dit omvat zowel elementen die in volledige schermmodus zijn geplaatst met behulp van de Fullscreen API en &lt;dialog&gt; elementen. </p>
+
+        <video class="backdrop" src="/02_CSS/4_Pseudo elements/Media/sample-mp4-file.mp4" controls></video><br><br>
+
+
+        <li>Before</li>
+        <p>:: after maakt een pseudo-element aan dat het eerste kind is van het geselecteerde element. Het wordt vaak gebruikt om cosmetische inhoud toe te voegen aan een element met de eigenschap inhoud. Het is standaard inline. De content moet gegeven worden</p>
+        <h4>Voorbeeld</h4>
+        <p class="before">Dit is een Voorbeeld tekst</p>
+
+        <li>Cue</li>
+        <p>The ::cue CSS pseudo-element matches WebVTT cues within a selected element. This can be used to style captions and other cues in media with VTT tracks.</p>
+        <div><video id="subtitles"controls>        
+        <source src="/02_CSS/4_Pseudo elements/Media/sample-mp4-file.mp4">
+        <track kind="subtitles" src="/02_CSS/4_Pseudo elements/Media/sample.vtt"></video>
+        </div><br><br>
+
+    </ol>
+</body>
+</html>

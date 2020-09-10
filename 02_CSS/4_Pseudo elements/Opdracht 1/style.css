@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;   
+}
+li {
+    background: grey;
+    color: white;
+}
+
+p.after::after {
+    content: " :)";
+    color: red; 
+    font-size: large;   
+}
+
+.backdrop::backdrop{
+    background: hotpink;
+}
+
+p.before::before {
+    content: " :) ";
+    color: red; 
+    font-size: large;   
+}
+
+video::cue{
+    color: blueviolet;
+}
+
