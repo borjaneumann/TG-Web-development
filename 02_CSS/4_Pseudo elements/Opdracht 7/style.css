@@ -8,9 +8,17 @@
 }
 .container::before {
     position: absolute;
-    transform: rotate(35deg);
+    transform: rotate(22deg);
     content: "" ;
     width: 200px;
     height: 200px;
-
+    background: red;
+}
+.container::after {
+    position: absolute;
+    transform: rotate(66deg);
+    content: "" ;
+    width: 200px;
+    height: 200px;
+    background: red;
 }

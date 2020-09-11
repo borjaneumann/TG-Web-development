@@ -1,0 +1,21 @@
+.container {
+    background: yellow;
+    display: flex;
+    justify-content: flex-start;
+}
+.box {
+    background: rgb(121, 180, 121);
+    padding: 1rem;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 {
+    background: yellow;
+    width: auto;
+    height: 120px;
+    display: flex;
+    justify-content: flex-end;
+}
+

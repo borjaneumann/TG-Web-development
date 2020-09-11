@@ -1,0 +1,39 @@
+.box  {
+    background: rgb(121, 180, 121);
+    padding: 1rem;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: ;
+    align-items: center;
+    }
+.container_4_1 {
+    background: yellow;
+    display: flex;
+    justify-content: flex-start;
+}
+.container_4_2 {
+    background: yellow;
+    display: flex;
+    justify-content: flex-end;
+}
+.container_4_3 {
+    background: yellow;
+    display: flex;
+    justify-content: center;
+}
+.container_4_4 {
+    background: yellow;
+    display: flex;
+    justify-content: space-between;
+}
+.container_4_5 {
+    background: yellow;
+    display: flex;
+    justify-content: space-around;
+}
+.container_4_6 {
+    background: yellow;
+    display: flex;
+    justify-content: space-evenly;
+}
