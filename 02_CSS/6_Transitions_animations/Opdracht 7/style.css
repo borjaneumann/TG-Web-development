@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 300px;
+    height: 300px;
+    background: black;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.object {
+    background: rgb(142, 182, 102);
+    width: 100px;
+    height: 100px;
+    border-radius: 0% 0% 0% 50%;
+    animation: radius 10s infinite;
+}
+@keyframes radius{
+    0% {
+        border-radius: 50%;
+    }
+    20% {
+        transform: rotate(45deg);
+        border-radius: 0% 50% 50% 50%;
+    }
+    40% {
+        border-radius: 50% 0% 0% 50%;    
+    }
+    60% {
+        border-radius: 0% 0% 0% 50%;
+        transform: rotate(135deg);
+        rotate: 135deg;
+    }
+    80% {
+        border-radius: 0%;
+    }
+    100% {
+        border-radius: 50%%;
+    }
+}

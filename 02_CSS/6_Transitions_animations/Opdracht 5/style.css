@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    background: grey;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.box {
+    background: coral; 
+    height: 250px;
+    width: 250px;
+}   
+img {
+    height: 250px;
+    width: 250px;
+}
+.luigi-box {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    top: 0;
+    background: red;
+    border: 10px black solid;
+    transition: all 2s ease-out;   
+}
+.luigi-box:hover  {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    /* top: 100; */
+    background: red;
+    /* border: 10px black solid; */
+    transform-origin:  ;
+    transform: origin (bottom left) rotate(45deg) translate(100px,50px);
+     
+    /* opacity: 0; */
+    
+}
