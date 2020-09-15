@@ -1,0 +1,166 @@
+html, body {
+  max-width: 1200px;
+  margin: auto;
+  font-family: "Space Mono", sans-serif;
+  font-size: 18px;
+  line-height: 1.4em;
+  color: GhostWhite;
+}
+body {
+  background-image: url("/02_CSS/Images/space.jpg");
+  height: 100%;
+  background-attachment: fixed;
+  background-size: cover;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Title and Description */
+.page-title {
+  text-align: center;
+  margin: auto;
+  line-height: 2em;
+}
+.logo {
+  height: 80px;
+  width: 80px;
+  background-image: url("/02_CSS/Images/spaceship.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: relative;
+  top: 1em;
+}
+.page-title h1 {
+  display: inline-block;
+}
+.main {
+  text-align: center;
+}
+.page-description {
+  font-size: 0.8rem;
+  padding: 30px;
+}
+.learn-more {
+  color: DarkOrange;
+  text-decoration: none;
+  display: block;
+  margin: 25px 0 0 0;
+  font-weight: bold;
+}
+/* Gallery */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.gallery-item {
+  margin: 20px;
+}
+.gallery-item .thumbnail {
+  width: 240px;
+  border: 2px solid GhostWhite;
+  border-radius: 4px;
+}
+/* Footer Navigation */
+nav {
+  margin-top: 30px;
+}
+nav ul {
+  display: block;
+  text-align: center;
+}
+nav li {
+  display: inline;
+  margin: 0 20px 0 0;
+  color: GhostWhite;
+  
+}
+nav a {
+  line-height: 60px;
+  border: 1px solid GhostWhite;
+  padding: 7px;
+  border-radius: 4px;
+  color: DarkOrange;
+  text-decoration: none;
+}
+.contact-btn {
+  cursor: pointer;
+  margin: 20px 30px;
+  text-align: center;
+}
+.contact-btn a:active {
+  position: relative;
+  bottom: 2px;
+}
+/* Opdracht 1 */
+@media  screen and (min-width:480px) {
+    .page-title {
+        width: 270px;
+    }
+       
+}
+
+Opdracht 2
+@media  screen and (min-width:320px) and (max-width:480px), (orientation: portrait){
+    .gallery-item .thumbnail {
+        width: 95%;
+    }
+    .page-title, .logo{
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+    } 
+}
+/* Opdracht 3 */
+@media screen and (min-resolution:150dpi) {
+    .logo {
+        background-image: url("/02_CSS/Images/spaceship2.png");
+    }
+}
+
+/* Opdracht 4 */
+@media screen and (max-resolution:150dpi) and (max-width:480px) {
+    .page-description {
+        font-size: 20px;
+    }
+}
+/* Opdracht 5 */
+/* Zie opdracht 2 */
+
+/* opdracht 6 */
+@media screen and (min-width:768px) and (max-width:1024px) and  (orientation: landscape) {
+    header {
+        float: left;
+        width: 30%;
+        position: fixed;
+        top: 0px;
+        left: 30px;
+    }
+    .page-description {
+        float: left;
+        width: 30%;
+        position: fixed;
+        top: 270px;
+        left: 0px;
+    }
+    .learn-more {
+        float: left;
+        width: 20%;
+        position: fixed;
+        top: 500px;
+        left: 80px;
+        
+    }
+    .gallery {
+        float: right;
+        width:70%;
+    }
+    .footer {
+        position: fixed;
+        top: 570px;
+        left: 20px;
+    }
+}

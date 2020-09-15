@@ -5,6 +5,7 @@
     border: 2px black solid;
     margin-bottom: 2rem;
     padding-top: 1rem;
+    text-align: center;
 }
 .box-two {
     width: 100px;
@@ -12,6 +13,7 @@
     background-color: orchid;
     border: 2px black solid;
     margin-left: 1rem;
+    text-align: center;
 }
 .box-three {
     width: 100px;
@@ -21,6 +23,7 @@
     margin: 2 rem;
     border: 2px red solid;
     margin-left: -1rem;
+    text-align: center;
 
 }
 .box-four {
@@ -32,4 +35,5 @@
     border: 7px black solid;
     padding-top: 1rem;
     margin: auto;
+    text-align: center;
 }

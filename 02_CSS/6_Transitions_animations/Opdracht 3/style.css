@@ -12,144 +12,61 @@
     margin: 20px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center;   
 }
+/* Als transitie */
 
-.box1 {
-    animation: backcolor 12s forwards, radius 12s forwards, mov1 8s forwards ease-out; 
-    position: relative;
-    animation: 
+.container .box1{
+    transition-property: margin-left, background-color, border-radius;
+    transition-duration: 2s,2s,2s; 
+    margin-left: 0;    
 }
-.box2 {
-    animation: backcolor 12s forwards, corner 12s forwards , mov2 8s forwards 0.5s ; 
-    position: relative;
+.container:hover .box1 {
+    border-radius: 50%;
+    background-color: red;
+    margin-left: 870px;
 }
-.box3 {
-    animation: backcolor 12s forwards, mov3 8s forwards ease-in; 
-    position: relative;
+.container .box2 {
+    transition-property: margin-left, background-color, border-radius;
+    transition-duration: 2s,2s,2s; 
+    transition-timing-function: ease-out;
+    margin-left: 0;      
 }
-.box4 {
-    animation: backcolor 12s forwards, mov4 8s forwards linear;  
-    position: relative;
+.container:hover .box2 {
+    border-radius: 15px;
+    background-color: red;
+    margin-left: 870px;
 }
-.box5 {
-    animation: backcolor 12s forwards, mov5 8s forwards;  
-    position: relative;
+.container .box3 {
+    transition-property: margin-left, background-color, border-radius;
+    transition-duration: 2s,2s,2s; 
+    transition-timing-function: ease-in;
+    margin-left: 0;      
 }
-
-@keyframes backcolor {
-    0% {
-        background: #3F768C;
-        
-    }
-    50% {
-        background: #be6545 ;
-    }
-    100% {
-        background: #3F768C;
-    }
+.container:hover .box3 {
+    border-radius: 15px;
+    background-color: red;
+    margin-left: 870px;
 }
-@keyframes radius {
-    0% {
-        border-radius: 0%;    
-    }
-    50% {
-        border-radius: 50%;
-    }
-    100% {
-        border-radius: 0%;
-    }
+.container .box4 {
+    transition-property: margin-left, background-color, border-radius;
+    transition-duration: 2s,2s,2s; 
+    transition-timing-function: ease-in-out;
+    margin-left: 0;      
 }
-@keyframes corner {
-    0% {
-        border-radius: 0px;    
-    }
-    50% {
-        border-radius: 15px;
-    }
-    100% {
-        border-radius: 0px;
-    }
+.container:hover .box4 {
+    border-radius: 15px;
+    background-color: red;
+    margin-left: 870px;
 }
-@keyframes mov1 {
-    0% {
-        transform: translate(0);   
-    }
-    50% {
-        transform: translate(870px); 
-    }
-    70% {
-        transform: translate(870px); 
-    }
-    100% {
-        transform: translate(0); 
-    }
+.container .box5 {
+    transition-property: margin-left, background-color, border-radius;
+    transition-duration: 2s,2s,2s; 
+    transition-timing-function: cubic-bezier(.59, 1.47, 0.51, 0.47);
+    margin-left: 0;      
 }
-@keyframes mov2 {
-    0% {
-        transform: translate(0);   
-    }
-    50% {
-        transform: translate(870px); 
-    }
-    70% {
-        transform: translate(870px); 
-    }
-    100% {
-        transform: translate(0); 
-    }
-}
-@keyframes mov3 {
-    0% {
-        transform: translate(0);   
-    }
-    50% {
-        transform: translate(870px); 
-    }
-    70% {
-        transform: translate(870px); 
-    }
-    100% {
-        transform: translate(0); 
-    }
-}
-@keyframes mov4 {
-    0% {
-        transform: translate(0);   
-    }
-    50% {
-        transform: translate(870px); 
-    }
-    70% {
-        transform: translate(870px); 
-    }
-    100% {
-        transform: translate(0); 
-    }
-}
-@keyframes mov5 {
-    0% {
-        transform: translate(0);   
-    }
-    25% {
-        transform: translate(200px); 
-    }
-    30% {
-        transform: translate(160px);
-    }
-    50% {
-        transform: translate(870px); 
-    }
-    70% {
-        transform: translate(870px); 
-    }
-    75% {
-        transform: translate(690px); 
-    }
-    80% {
-        transform: translate(720px); 
-    }
-    100% {
-        transform: translate(0); 
-    }
+.container:hover .box5 {
+    border-radius: 15px;
+    background-color: red;
+    margin-left: 870px;
 }

@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
 }
-
 .container {
     background: grey;
     width: 500px;
@@ -24,18 +23,12 @@ img {
     top: 0;
     background: red;
     border: 10px black solid;
-    transition: all 2s ease-out;   
+    transition-property: transform;   
+    transition-duration: 2s;
 }
 .luigi-box:hover  {
     position: absolute;
     height: 250px;
     width: 250px;
-    /* top: 100; */
-    background: red;
-    /* border: 10px black solid; */
-    transform-origin:  ;
-    transform: origin (bottom left) rotate(45deg) translate(100px,50px);
-     
-    /* opacity: 0; */
-    
+    transform: rotate(45deg) translate(300px, 200px) ;    
 }

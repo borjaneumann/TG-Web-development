@@ -6,6 +6,14 @@
     <title>Document</title>
     <style>
         h2 {
+            transition: color 2s;
+            color: blue;
+        }
+        h2:hover {
+            color: red;
+        }
+        /* Ook mogelijk als animatie */
+        /* h2 {
             animation: color 3s forwards; 
         }
         @keyframes color {
@@ -15,12 +23,12 @@
             to {
                 color: yellow;
             }
-        }
+        } */
     </style>
 </head>
 <body>
     <h1>Opdracht 2 - Transitions</h1>
-    <h2>Color transition from red to yellow</h2>
+    <h2>Color transition from blue to red</h2>
     
 </body>
 </html>

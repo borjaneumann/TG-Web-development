@@ -21,102 +21,45 @@
     justify-content: center;
     align-items: center;
 }
-.box1 {
-    animation: mov1 10s forwards infinite; 
+
+.container .box1 {
+    position: absolute;
+    top: 225px;
+    right: 475px;
+    margin-top: 0; 
+    margin-right: 0;
+    transition-property: top, right;
+    transition-duration: 1s,2s;
+    transition-delay: 0, 2s;       
+}
+.container:hover .box1 {
     position: absolute;
     top: 0px;
-    right: 0px;        
+    right: 0px;   
 }
-.box2 {
-    animation: mov2 10s forwards infinite; 
-    position: absolute;    
+.container .box2 {
+    position: absolute;
+    top: 225px;
+    right: 475px;  
+    transition-property: top, right;
+    transition-duration: 1s,2s;
+    transition-delay: 0, 2s;      
 }
-.box3 {
-    animation: mov3 10s forwards   infinite ; 
-    position: absolute;    
+.container:hover .box2 {
+    position: absolute;
+    top: 0px;
+    right: 950px;        
 }
-.box4 {
+.container .box3 {
+    position: absolute;
+    top: 225px;
+    right: 475px;
+    transition-property: top, right, margin;
+    transition-duration: 3s,0.4s;
+    transition-delay: 2s, 1.5s;        
+}
+.container:hover .box3 {
     position: absolute;
     top: 450px;
-    left: 0px;
+    right: 950px;        
 }
-
-@keyframes mov1 {
-    0% {
-        top: 0;
-        left: 950px; 
-    }
-    10% {
-        top: 100px;
-        left: 950px;
-    }
-    20% {
-        top: 225px;
-        left: 475px;
-    }
-    60% {
-        top: 225px;
-        left: 475px; 
-    }
-    70% {
-        top: 125px;
-        left: 475px;
-    }
-    100% {
-        top: 0px;
-        left: 950px; 
-    }
-}
-@keyframes mov2 {
-    0% {
-        top: 0;
-        left: 0; 
-    }
-    10% {
-        top: 100px;
-        left: 0;
-    }
-    20% {
-        top: 225px;
-        left: 475px; 
-    }
-    60% {
-        top: 225px;
-        left: 475px; 
-    }
-    70% {
-        top: 125px;
-        left: 475px;
-    }
-    100% {
-        top: 0;
-        left: 0;
-    }
-}
-@keyframes mov3 {
-    0% {
-        top: 450px;
-        left: 0px;   
-    }
-    10% {
-        top: 450px;
-        left: 475px;
-    }
-    50% {
-        top: 225px;
-        left: 475px;
-    }
-    80% {
-        top: 225px;
-        left: 475px;
-    }
-    90% {
-        top: 225px;
-        left: 0;
-    }
-    100% {
-        top: 450px;
-        left: 0px;
-    }
-}
-
