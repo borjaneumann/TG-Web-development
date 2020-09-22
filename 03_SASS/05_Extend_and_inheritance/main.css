@@ -1,0 +1,25 @@
+@media screen and (max-width: 600px) {
+  .opdracht {
+    color: red;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .opdracht {
+    color: lightblue;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .opdracht {
+    background-color: lightblue;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .opdracht {
+    background-color: olivedrab;
+  }
+}
+/*# sourceMappingURL=main.css.map */

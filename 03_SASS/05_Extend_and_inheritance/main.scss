@@ -1,0 +1,27 @@
+$breaK-small:600px;
+$breaK-large:1200px;
+$info-iphonex:"screen and (max-width:376px)";
+$info-max-width: max-width;
+$max-width-samsung:1000px;
+
+
+// Variables in queries
+
+.opdracht {
+    @media screen and (max-width:$breaK-small){
+      color: red;  
+    }
+    @media screen and (min-width:$breaK-large){
+        color: lightblue;  
+    }
+    // Variables as full query
+    @media #{$info-iphonex}{   
+        background-color: lightblue;
+        height: 100vh;
+    }
+    @media screen and ($info-max-width:$max-width-samsung){
+        background-color: olivedrab;
+    }
+
+
+}

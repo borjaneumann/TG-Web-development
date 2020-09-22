@@ -3,129 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="portfolio.css">
+    <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">    
+    <title>Document</title>
 </head>
 <body>
-    <nav>
-        <div class="menu-title">Menu</div>
-        <div class="menu-links">
-            <p><a href="">DASHBOARD</a></p>
-            <p><a href="">USER PROFILE</a></p>
-            <p><a href="">MEMBERS</a></p>
-            <p><a href="">ASSIGNMENTS</a></p>
-            <p><a href="">BLOGS</a></p>
+    <div class="container">
+        <div class="nav">
+            <nav class="nav-box">
+                <div class="menu-title"><h2>MENU</h2></div>
+                <div class="menu-links">
+                    <ul>
+                        <li><a href=""><span><i class="lni lni-dashboard"></i></span> DASHBOARD</a></li>
+                        <li><a href=""><i class="lni lni-user"></i> USER PROFILE</a></li>
+                        <li><a href=""><i class="lni lni-users"></i> MEMBERS</a></li>
+                        <li><a href=""><i class="lni lni-notepad"></i> ASSIGNMENTS</a></li>
+                        <li><a href=""><i class="lni lni-bookmark-alt"></i> BLOGS</a></p></li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-    </nav>
-    <section id="members">
-        <h2>Members</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>First Name</th>
-                    <th>Surname</th>
-                    <th>Age</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Klaas</td>
-                    <td>Jan</td>
-                    <td>34</td>
-                </tr>
-                <tr>
-                    <td>Jennis</td>
-                    <td>Lee</td>
-                    <td>25</td>
-                </tr>
-                <tr>
-                    <td>Cameron</td>
-                    <td>Lion</td>
-                    <td>16</td>
-                </tr>
-                <tr>
-                    <td>Anthony</td>
-                    <td>Bos</td>
-                    <td>66</td>
-                </tr>
-                <tr>
-                    <td>Frits</td>
-                    <td>Kosnovia</td>
-                    <td>33</td>
-                </tr>
-                <tr>
-                    <td>Maria</td>
-                    <td>Kosnovia</td>
-                    <td>57</td>
-                </tr>
-                <tr>
-                    <td>Elena</td>
-                    <td>Kovic</td>
-                    <td>43</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
-    <section id="extra-info">
-        <h2>Additional information</h2>
-        <form action="">
-            <div class="form-fields">
-                <label for="firstname">First Name:</label>
-                <input type="text">
+        <div class="content">
+            <div class="content-1">
+                <div class="title"><h2 class="bigger-font">Members</h2></div>
+                <div class="table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>First Name</th>
+                                <th>Surname</th>
+                                <th>Age</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="darker">
+                                <td>Klaas</td>
+                                <td>Jan</td>
+                                <td>34</td>
+                            </tr>
+                            <tr>
+                                <td>Jennis</td>
+                                <td>Lee</td>
+                                <td>25</td>
+                            </tr>
+                            <tr class="darker">
+                                <td>Cameron</td>
+                                <td>Lion</td>
+                                <td>16</td>
+                            </tr>
+                            <tr>
+                                <td>Anthony</td>
+                                <td>Bos</td>
+                                <td>66</td>
+                            </tr>
+                            <tr class="darker">
+                                <td>Frits</td>
+                                <td>Kosnovia</td>
+                                <td>33</td>
+                            </tr>
+                            <tr>
+                                <td>Maria</td>
+                                <td>Kosnovia</td>
+                                <td>57</td>
+                            </tr>
+                            <tr class="darker">
+                                <td>Elena</td>
+                                <td>Kovic</td>
+                                <td>43</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
-
-            <div class="form-fields">
-                <label for="surname">First Name:</label>
-                <input type="text" >
+            <div class="content-2">
+                <div id="add-info">
+                    <div id="extra-info">
+                        <h2 class="bigger-font">Additional information</h2>
+                    </div>
+                    <div class="form-box">
+                        <form action="">
+                            <div class="form-fields" class="first-name">
+                                <label for="firstname">First Name:</label>
+                                <input size="20" type="text">
+                            </div>
+        
+                            <div class="form-fields">
+                                <label for="surname">Surname:</label>
+                                <input size="30"  type="text" >
+                            </div>
+                            <div class="form-fields">
+                                <label for="age">Age:</label>
+                                <input size="20" type="text" >
+                            </div>
+        
+                            <div class="form-fields">
+                                <label for="company">Company:</label>
+                                <input type="text"  size="55">
+                            </div>
+        
+                            <div class="form-fields">
+                                <label for="username">User Name:</label>
+                                <input type="text" size="45">
+                            </div>
+        
+                            <div class="form-fields">
+                                <label for="email">Email:</label>
+                                <input type="text" size="35">
+                            </div>
+        
+                            <div class="form-fields">
+                                <label for="addres">Address:</label>
+                                <input type="text"  size="55">
+                            </div>
+        
+                            <div class="form-fields">
+                                <label for="city">City:</label>
+                                <input size="52" type="text" >
+                            </div>
+        
+                            <div class="form-fields">
+                                <label for="country">Country:</label>
+                                <input size="53" type="text" >
+                            </div>
+                            
+                            <div class="form-fields">
+                                <label for="postalcode">Postal Code:</label>
+                                <input size="50" type="text" >
+                            </div>
+                            
+                        </form>
+                    </div>
+                </div>
             </div>
-
-
-            
-            <label for="surname">Surname:&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" placeholder="surname">
-
-            <label for="age">Age:&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" placeholder="age">
-
-            <label for="gender">Man:</label>
-            <input type="radio" value="man"  name="gender">
-            <label for="gender">Vrouw:</label>
-            <input type="radio" value="vrouw"  name="gender"><br><br>
-
-            <input type="checkbox" id="Salesforce" name="Salesforce" value="Salesforce">
-            <label for="Salesforce"> Saleforce</label><br>
-            <input type="checkbox" id="Cloud" name="Cloud" value="Cloud">
-            <label for="Cloud"> Cloud</label><br>
-            <input type="checkbox" id="Fullstack" name="Fullstack" value="Fullstack">
-            <label for="Fullstack"> Fullstack developer</label><br><br>
-
-            <label for="userPassword">Wachtwoord: </label>
-            <input id="userPassword" placeholder="wachtwoord"type="password"><br><br>
-
-            <label for="email">Email:</label>
-            <input type="email" placeholder="email">
-            <input type="submit"><br><br>
-            <label for="Techground_locatie">Kies een stad:</label>
-            <select id="dropdown"  name="Techground_locatie"><br>
-                <option value="Amsterdam">Amsterdam</option>
-                <option value="Rotterdam">Rotterdam</option>
-                <option value="Utrecht">Utrecht</option>
-                <option value="Den Haag">Den Haag</option>
-            </select><br><br>
-
-            <label for="date">Kies een datum:</label>
-            <input type="date" value="2020-09-02"><br><br>
-
-            <label for="meeting-time">Techgrounds meeting (choose a time):</label>
-            <input type="time" id="meeting-time" name="meeting-time"
-            min="09:00" max="17:00" required><small> Vanaf 9u tot 5u</small>br><br><br>
-
-            
-        
-        
-        </form>
-
-    </section>
-    
+        </div>
+    </div>
 </body>
 </html>
