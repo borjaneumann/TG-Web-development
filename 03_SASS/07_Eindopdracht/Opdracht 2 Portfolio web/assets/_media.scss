@@ -1,0 +1,38 @@
+@media screen and (max-width:900px) {
+    html {
+        overflow: unset;
+        overflow-x: hidden;
+    }   
+    .container {
+        display: unset;        
+    }
+    /* Nav bar */
+    .nav {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .menu-links {
+        margin: 0 auto;
+        ul li{
+            @include flex-center;
+            width: 100%;
+            margin-bottom: 20px;   
+        }
+        li {
+            display: inline-block;
+            position: relative;
+            margin: 0 auto;
+        }
+    }
+    .form-box {  
+        width: 90%;
+        margin: 0 auto;   
+    }
+    .form-fields {
+        width: 100%;
+        
+    }
+    #extra-info h2 {
+        font-size: 48px;
+    }    
+}

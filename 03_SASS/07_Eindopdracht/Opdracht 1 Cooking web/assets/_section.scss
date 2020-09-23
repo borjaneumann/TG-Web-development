@@ -1,0 +1,34 @@
+section {
+    background-color:$background-color;
+    margin-top: 50px;
+    h2 {
+        text-align: center;
+        background-color: $background-color;
+        position: relative;
+        top: 10px;
+    }
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+}
+.popular-button {
+    text-align: end;
+}
+.dish-boxes {
+    @include flex-center;
+    
+    margin: 1rem;
+    .dish-box {
+        width: 220px;
+        margin: 2rem;
+    }
+    img{
+        width: 200px;
+        border-radius: 50%;    
+    }       
+}
+
+
+
+

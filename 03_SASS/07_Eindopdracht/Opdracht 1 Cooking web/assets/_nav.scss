@@ -1,0 +1,20 @@
+nav {
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+    background-color: $background-color;
+    z-index: 1;
+    ul {
+        display: flex;
+        list-style-type: none;
+        justify-content: flex-end;
+        margin: 15px 40px 15px 0;
+    }
+    ul li {
+        padding: 0 15px;
+    }
+    ul li a {
+        text-decoration: none;
+        color: black;
+    }
+}

@@ -1,0 +1,28 @@
+main {
+    position: relative;
+    
+    h2 {
+        text-align: center;
+    }
+    .menu-info { 
+        @include flex-align;    
+    }
+    .dish-boxes {
+        height: 400px;
+    }
+    .menu-img {
+        margin: 4rem;
+        transform: scale(1.2);
+        position: relative;
+        top: 32px;
+        overflow: hidden;
+    }
+    .menu-column {
+        display: flex;
+    }
+    .menu-box {
+        margin-bottom: 1rem;
+        width: 240px;
+        padding: 10px;
+    }
+}

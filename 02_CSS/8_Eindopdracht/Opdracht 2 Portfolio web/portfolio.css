@@ -49,9 +49,7 @@
     list-style-type: none; 
     margin: 10px;
 }
-.menu-links ul li{
-    ;
-}
+
 .menu-links {
     display: flex;
     flex-direction: column;

@@ -1,0 +1,29 @@
+form {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    color: black;
+    min-width: 0; 
+    .form-fields {
+        display: inline-block;
+        border-radius: 15px;
+        padding: 10px;
+    }
+}
+.form-box {
+    width: 90%;
+    display: flex;
+    min-width: 0;
+    margin: 0 auto;
+}  
+label, input {
+    display: block;   
+}
+input {
+    background-color: #C5DEEA;;
+    border-radius: 5px;
+    border: 1px  #97b1bd solid;
+    line-height: 1.5rem;
+    padding: 8px 0;
+    width: 100%;
+}

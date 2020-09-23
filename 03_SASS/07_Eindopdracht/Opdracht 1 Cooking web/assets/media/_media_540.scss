@@ -1,0 +1,119 @@
+@media screen and (max-width: 540px){
+    body {
+        top: 50%;
+        left: 50%;
+        margin: auto;
+    }
+    nav ul {
+        justify-content: center;   
+        margin: 15px 0 15px 0;
+        padding: 10px;
+        li {
+            padding: 0 30px;
+        }
+        li a {
+            text-decoration: none;
+            color: black;
+            font-size: 25px;
+        }
+    }
+    header {
+        position: relative;
+        top:80px;
+        height: 500px;
+        img {
+            height: 500px;
+            display: block;
+            z-index: -1;
+            filter: brightness(50%);
+        }
+        .info-header {
+            text-align: center;
+            font-size: 30px;
+            top: 40%;  
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        & p {
+            margin-bottom: 20px;
+        }
+        .button-header {
+            top: 100%;
+        }
+        .buy{
+            margin-bottom: 10px;
+            font-size: 30px;
+        }
+        .show{
+            margin-bottom: 10px;
+            font-size: 30px;
+            width: 190px;
+        }
+    }
+
+    main h2 {
+        margin-top: 20px;
+    }
+    section h2 {
+        top: 10px;
+        margin: 30px 0;
+        padding-top: 20px;
+        font-size: 30px;
+    }
+    .dish-box {
+        margin: auto;
+        /* width: 300px; */
+        left: 50%;
+    }
+    .dish-boxes {
+        display: block;
+        margin: auto;
+        width: 260px;
+    }
+    /* main menu */
+    #cook {
+        display: none;
+    }
+    main .menu-img {
+        margin: 0;}
+    main .menu-boxes {
+        align-items: center; 
+        margin: auto;   
+    }
+    main .menu-column {
+        display: flex;
+        flex-direction: column;
+        align-content: center;   
+    }
+    main .menu-box {
+        margin-bottom: 1rem;
+        width: 240px;
+        padding: 10px;
+    }
+    footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 400px;  
+        text-align: center; 
+        padding: 20px;
+        .contact-info {
+            padding: 5px;
+            margin: 5px;
+        }
+        i {
+            margin: 20px 0;
+        }
+        #contact {
+            font-size: 18px;
+        }
+        #footer-contact {
+            margin-bottom: 10px; 
+            font-size: 40px;   
+        }
+        #footer-navigation {
+            margin-bottom: 10px; 
+            font-size: 40px;        
+        }
+    }
+}

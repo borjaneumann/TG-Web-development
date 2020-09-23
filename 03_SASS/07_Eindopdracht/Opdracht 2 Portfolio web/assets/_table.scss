@@ -1,0 +1,16 @@
+tr, td, th {
+    border: #C5DEEA 1px solid;
+    text-align: left;
+    color: black;
+}
+tbody tr:hover {background-color:$primary-color; }
+.table {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    color: white;
+    table {
+        width: 90%;
+        line-height: 25px;
+    }
+}
