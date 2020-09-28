@@ -7,7 +7,7 @@ html, body {
   color: GhostWhite;
 }
 body {
-  background-image: url("/02_CSS/Images/space.jpg");
+  background-image: url("./Images/space.jpg");
   height: 100%;
   background-attachment: fixed;
   background-size: cover;
@@ -25,7 +25,7 @@ body {
 .logo {
   height: 80px;
   width: 80px;
-  background-image: url("/02_CSS/Images/spaceship.png");
+  background-image: url("./Images/spaceship.png");
   background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
@@ -117,7 +117,7 @@ nav a {
 /* Opdracht 3 */
 @media screen and (min-resolution:150dpi) {
     .logo {
-        background-image: url("/02_CSS/Images/spaceship2.png");
+        background-image: url("./Images/spaceship2.png");
     }
 }
 

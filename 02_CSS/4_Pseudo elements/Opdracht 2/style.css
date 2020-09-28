@@ -5,8 +5,6 @@ li {
     background: grey;
     color: white;
 }
-
-}
 video::cue-region {
     color: yellow;
 }
