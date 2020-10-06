@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Button</button>
+    <div>
+        <span id="label"></span>
+    </div>
+    <script>
+    function checkNumber() {
+        let input = document.getElementById('number').value;
+        let text;
+        if ((input>30&&input<35) || (input>40 &&input<45)){
+            text="het getal is tussen 30 en 35 of het getal is tussen 40 en 45";
+        }
+        else {
+        text="";
+        }
+        document.getElementById('label').innerHTML=text;
+    }
+    </script>
+</body>
+</html>

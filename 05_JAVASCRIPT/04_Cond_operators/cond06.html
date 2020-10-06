@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>The ! operator is a unary operator; it is placed before a single operand. Its purpose is
+        to invert the boolean value of its operand. For example, if x is truthy !x evaluates to
+        false. If x is falsy, then !x is true.</p>
+    <input type="number" name="number" id="number">
+    <button id="btn" onclick="checkNumber()">Button</button>
+    <div>
+        <span id="label"></span>
+    </div>
+    <script>
+    function checkNumber() {
+    let input = document.getElementById('number').value;
+    let text;
+    if (input!=3){
+        text="Het ingevoerde getal is anders dan 3"
+        }
+        document.getElementById('label').innerHTML=text;
+    }
+    </script>
+   
+</body>
+</html>

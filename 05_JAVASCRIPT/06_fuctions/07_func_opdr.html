@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Functions Opdracht 7</h1>
+    <h2>Hoe geef je 2 of meer parameters mee aan een functie? Geef een voorbeeld.
+    </h2>
+    <script>
+        // Hoe geef je 2 of meer parameters mee aan een functie? Geef een voorbeeld
+        function addition (a,b,c){      
+            return a+b+c;
+        }
+        addition(3,5,9);//This parameters are explicit as they have been defined in the parenthesis of the method call.
+        
+        const sum = addition(3,5,9); 
+        console.log(addition(3,5,9));//17
+
+        // rest parameters, the last element will be always an array so we have to use a loop to be, in this case, able to use it in the addition.
+
+        function restFunc (c,d,...e){
+            console.log(c);//5
+            console.log(d);//6
+            console.log(e);//[9,12]
+
+            let total =0; 
+            for (const n of e){
+                total += n;
+                console.log(total+c+d);
+            }
+
+
+            return total+c+d;
+        }
+
+        const result = restFunc(5,6,9,12)
+       
+
+    </script>
+</body>
+</html>

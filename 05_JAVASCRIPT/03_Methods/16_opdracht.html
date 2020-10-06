@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<p>Opdrachten met built in methods</p> 
+<p>charAt(). locates a character in a string according to its position</p>
+<p>The concat() method concatenates the string arguments to the calling string and returns a new string.</p>
+<p>slice() method extracts a section of a string and returns it as a new string, without modifying the original string.</p>
+<p>split() method divides a String into an ordered list of substrings, puts these substrings into an array, and returns the array.  The division is done by searching for a pattern; where the pattern is provided as the first parameter in the method's call.  </p>
+<p>substr()</p>
+
+    <script>
+        // charAt()
+        let string = "doraemon";
+        console.log(string.charAt(5));
+
+        // concat()
+        let string1 ="Stranger"; 
+        let string2 ="Things" ;
+        console.log(string1.concat(' ',string2));
+
+        // slice()
+        let slice = 'The boat goes nowhere without a harbour destination';
+        console.log(slice.slice(30));
+        console.log(slice.slice(4,8));
+        console.log(slice.slice(-11));
+
+        // split()
+        let split = 'The boat goes nowhere without a harbour destination';
+        const words = split.split(' ');
+        console.log(words[3])
+        const char = split.split('');
+        console.log(words[5])
+        
+        // substr()
+        const substr = 'Amsterdam';
+
+        console.log(substr.substr(2, 4));
+        console.log(substr.substr(2));
+
+    </script>
+</body>
+</html>
+
+
+
+ 

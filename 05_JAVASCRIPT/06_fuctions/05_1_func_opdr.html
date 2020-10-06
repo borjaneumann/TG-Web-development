@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="controlList()">check</button>
+    <input id='entry' type="text">
+    <p id="answer"></p>
+
+<script>
+    const namesList = ['John', 'Olly', 'Mo', 'Hendrik','Tony'];
+        function controlList (){
+            let input =document.getElementById('entry').value;
+
+            if (namesList.includes(input)) {
+            document.getElementById('answer').innerHTML= input +' is een bekend bij ons';}
+            else {
+            document.getElementById('answer').innerHTML= 'Onbekend in ons systeem';}
+        }   
+    
+</script>
+</body>
+</html>
+
+<!-- var guestName = prompt('Uw naam invoeren: ');
+            if (namesList.includes(guestName)) {
+            alert('Dit is een bekende van ons: '+ guestName);
+            }
+            else {
+            alert('Onbekend in ons systeem');
+            } -->

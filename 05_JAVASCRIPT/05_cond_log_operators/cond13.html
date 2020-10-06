@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Translate months</h1>
+<input type="number" name="number" id="number">
+<button onclick="translateMonth()">translate</button>
+<div id="translatedMonth"></div>
+
+<script>
+    function translateMonth() {
+        let input = document.getElementById('number').value;
+        let text;
+        if (input==1){
+            text="January";
+        }
+        else if (input==2){
+            text="February";
+        }
+        else if (input==3){
+            text="March";
+        }
+        else if (input==4){
+            text="April";
+        }
+        else if (input==5){
+            text="May";
+        }
+        else if (input==6){
+            text="June";
+        }
+        else if (input==7){
+            text="July";
+        }
+        else if (input==8){
+            text="August";
+        }
+        else if (input==9){
+            text="September";
+        }
+        else if (input==10){
+            text="October";
+        }
+        else if (input==11){
+            text="November";
+        }
+        else if (input==12){
+            text="December";
+        }
+        else {
+        text="";
+        }
+        document.getElementById('translatedMonth').innerHTML=text;
+    }
+</script>
+</body>
+</html>
+   

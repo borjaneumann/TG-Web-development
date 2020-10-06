@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Random name 5.2.</h1>
+    <button onclick="controlList()">check</button>
+    
+    <input id='entry' type="text">
+    <p id="answer"></p>
+    <script>
+        const namesList = ['John', 'Olly', 'Mo', 'Hendrik','Tony','Irus','Jan','Peter'];
+
+        function randomName(){
+            let randomName = namesList[Math.floor(Math.random()*5)];
+            return randomName         
+        }   
+        function controlList (){
+            randomName();
+            if (namesList.includes(randomName())) {
+            document.getElementById('entry').value= randomName() +' is bekend bij ons';}
+            let inputValue=document.getElementById('answer').value;
+            return inputValue;
+        }   
+    </script>
+</body>
+</html>
+
+
+
+        

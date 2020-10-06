@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h1>Translate months</h1>
+<h2>Please enter a number from 1 to 12</h2>
+<input type="number" name="number" id="number">
+<button onclick="translateMonth()">translate</button>
+<div id="translatedMonth"></div>
+
+<script>
+    function translateMonth() {
+        let input = document.getElementById("number").value;
+        switch (input) {
+            case "1": 
+                text="January";
+                break;
+            case "2": 
+                text="February";
+                break;
+            case "3": 
+                text="March";
+                break;
+            case "4": 
+                text="April";
+                break;
+            case "5": 
+                text="May";
+                break;
+            case "6": 
+                text="June";
+                break;
+            case "7": 
+                text="July";
+                break;
+            case "8": 
+                text="August";
+                break;
+            case "9": 
+                text="September";
+                break;
+            case "10": 
+                text="October";
+                break;
+            case "11": 
+                text="November";
+                break;
+            case "12": 
+                text="December";
+                break;
+            default:
+                text="This entry is not a number between 1 and 12"
+        }
+        document.getElementById('translatedMonth').innerHTML=text;
+    }
+</script>
+</body>
+</html>
+   
