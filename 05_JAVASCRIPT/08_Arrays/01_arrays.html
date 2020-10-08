@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h1>Arrays</h1>
+
+<script>
+    //Opdracht 1
+    // const randomNumbers= [7,9,23,4,5,45,45,2,22,33]
+    // console.log(randomNumbers[0]);
+    // console.log(randomNumbers[1]);
+    // console.log(randomNumbers[2]);
+    // console.log(randomNumbers[3]);
+    // console.log(randomNumbers[4]);
+    // console.log(randomNumbers[5]);
+    // console.log(randomNumbers[6]);
+    // console.log(randomNumbers[7]);
+    // console.log(randomNumbers[8]);
+    // console.log(randomNumbers[9]);
+   
+    //opdracht 2
+    // const fruits = ['apple', 'tomato', 'mandarine', 'orange', 'grape'];
+    // console.log(fruits[0]);
+    // console.log(fruits[1]);
+    // console.log(fruits[2]);
+    // console.log(fruits[3]);
+    // console.log(fruits[4]);
+
+    //opdracht 3
+    //Apple's index is 0.
+    // console.log(fruits[0]);
+
+    //opdracht 4
+    //Orange's index is 3.
+    // console.log(fruits[3]);
+
+    //opdracht 5
+    // const randomNumbers= [7,9,23,4,5,45,45,2,22,33]
+    // const fruits = ['apple', 'tomato', 'mandarine', 'orange', 'grape'];
+    // const randomNumber = randomNumbers[Math.floor(Math.random()*10)];
+    // console.log(randomNumber)
+    // const fruitSelection =randomNumber%5;//any number divided into 5 will  get a remainder between 0 and 4, these are our indexes.
+    // console.log(fruits[fruitSelection])
+
+    //Opdracht 6
+    const fruits = ['apple', 'tomato', 'mandarine', 'orange', 'grape'];
+
+    //PUSH Adds new elements to the end of an array, and returns the new length
+    fruits.push('banana');
+
+    //POP Removes the last element of an array, and returns that element
+    fruits.pop('banana');//returns banana
+    fruits.pop()//removes last item
+    fruits // ['apple', 'tomato', 'mandarine', 'orange']
+
+    //SHIFT Removes the first element of an array, and returns that element just like POP
+    fruits.shift('');//removes apple
+
+    //SLICE Selects a part of an array, and returns the new array.
+    //The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+    //Note: The original array will NOT be changed.
+    console.log(fruits.slice(1,3))//mandarine,orange
+
+
+    //SPLICE Adds/Removes elements from an array. first number in the arguments indicates the index where the item will be added, second number indicates the index of the item that will be removed. Then the items to be added follow.
+    // Note: This method CHANGES the original array.
+    //array.splice(index, howmany, item1, ....., itemX)
+    console.log(fruits.splice(2,2, ));//at index 2 two items are removed/ it remains 'adios' and 'hola'
+    console.log(fruits.splice(2,2, 'adios','hola')); //At index 2, two items, adios and hola are added  ["tomato", "mandarine", "adios", "hola"].
+
+
+
+    //SORT Sorts the elements of an array
+    // The sort() method sorts the items of an array.
+    // The sort order can be either alphabetic or numeric, and either ascending (up) or descending (down).
+    // By default, the sort() method sorts the values as strings in alphabetical and ascending order.
+    // This works well for strings ("Apple" comes before "Banana"). However, if numbers are sorted as strings, "25" is bigger than "100", because "2" is bigger than "1".
+    // Because of this, the sort() method will produce an incorrect result when sorting numbers.
+    // You can fix this by providing a "compare function" (See "Parameter Values" below).
+    // Note: This method CHANGES the original array.
+
+    fruits.sort();//["adios", "hola", "mandarine", "tomato"]
+
+    //OPDRACHT 7
+    console.log(fruits.length);//output is 4.
+
+    //OPDRACHT 8//change values in an array with index. Melon replaces mandarine at index 2.
+    fruits[2]='melon';//["adios", "hola", "melon", "tomato"]
+
+    //OPDRACHT 9//swap first item and last item
+
+    let temp = fruits[0];
+    fruits[0] = fruits[2];
+    myData[2] = temp;   
+    console.log(fruits)
+
+
+
+</script>
+    
+</body>
+</html>

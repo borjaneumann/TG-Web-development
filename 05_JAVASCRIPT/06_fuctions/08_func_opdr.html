@@ -17,23 +17,23 @@
             </tr>
             <tr>
                 <td>Jan</td>
-                <td><input id="w1" type="number"></td>
+                <td><input id="w1"  oninput='wiskunde()' type="text"class='wiskunde' ></td>
             </tr>
             <tr>
                 <td>Kim Sing</td>
-                <td><input id="w2"type="number"></td>
+                <td><input class='wiskunde'  oninput='wiskunde1()' id="w2" type="text"></td>
             </tr>
             <tr>
                 <td>Samantha</td>
-                <td><input id="w3"type="number"></td>
+                <td><input class='wiskunde' oninput='wiskunde2()' id="w3" type="text"></td>
             </tr>
             <tr>
                 <td>Joyce</td>
-                <td><input id="w4"type="number"></td>
+                <td><input class='wiskunde' oninput='wiskunde3()' id="w4" type="text"></td>
             </tr>
             <tr>
                 <td>Gareth</td>
-                <td><input id="w5"type="number"></td>
+                <td><input class='wiskunde' oninput='wiskunde4()' id="w5" type="text"></td>
             </tr>       
         </table>
             <table id='natuurkunde'>
@@ -44,23 +44,23 @@
         </tr>
         <tr>
             <td>Jan</td>
-            <td><input type="text"></td>
+            <td><input oninput='natuur()' id='n1' type="text"></td>
         </tr>
         <tr>
             <td>Kim Sing</td>
-            <td><input type="text"></td>
+            <td><input oninput='natuur1()' id='n2' type="text"></td>
         </tr>
         <tr>
             <td>Samantha</td>
-            <td><input type="text"></td>
+            <td><input oninput='natuur2()' id='n3' type="text"></td>
         </tr>
         <tr>
             <td>Joyce</td>
-            <td><input type="text"></td>
+            <td><input oninput='natuur3()' id='n4' type="text"></td>
         </tr>
         <tr>
             <td>Gareth</td>
-            <td><input type="text"></td>
+            <td><input oninput='natuur4()' id='n5' type="text"></td>
         </tr>       
             </table>
             <table id='nederlands'>
@@ -71,23 +71,23 @@
         </tr>
         <tr>
             <td>Jan</td>
-            <td><input type="text"></td>
+            <td><input oninput='nl1()' id='nl1' type="text"></td>
         </tr>
         <tr>
             <td>Kim Sing</td>
-            <td><input type="text"></td>
+            <td><input oninput='nl2()' id='nl2' type="text"></td>
         </tr>
         <tr>
             <td>Samantha</td>
-            <td><input type="text"></td>
+            <td><input oninput='nl3()' id='nl3' type="text"></td>
         </tr>
         <tr>
             <td>Joyce</td>
-            <td><input type="text"></td>
+            <td><input oninput='nl4()' id='nl4' type="text"></td>
         </tr>
         <tr>
             <td>Gareth</td>
-            <td><input type="text"></td>
+            <td><input oninput='nl5()' id='nl5' "type="text"></td>
         </tr>       
             </table>
             <table id='engels'>
@@ -98,23 +98,23 @@
             </tr>
             <tr>
                 <td>Jan</td>
-                <td><input type="text"></td>
+                <td><input oninput='en1()' id='en1' type="text"></td>
             </tr>
             <tr>
                 <td>Kim Sing</td>
-                <td><input type="text"></td>
+                <td><input oninput='en2()' id='en2' type="text"></td>
             </tr>
             <tr>
                 <td>Samantha</td>
-                <td><input type="text"></td>
+                <td><input oninput='en3()' id='en3' type="text"></td>
             </tr>
             <tr>
                 <td>Joyce</td>
-                <td><input type="text"></td>
+                <td><input oninput='en4()' id='en4' type="text"></td>
             </tr>
             <tr>
                 <td>Gareth</td>
-                <td><input type="text"></td>
+                <td><input oninput='en5()' id='en5'  type="text"></td>
             </tr>
         </table>
     </div>
@@ -129,33 +129,33 @@
             </tr>
             <tr>
                 <td>Jan</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="janTaal" ></td>
+                <td id="janwis"></td>
+                <td id="janfinal"></td>
             </tr>
             <tr>
                 <td>Kim Sing</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="kimTaal"></td>
+                <td id="kimwis"></td>
+                <td id="kimfinal"></td>
             </tr>
             <tr>
                 <td>Samantha</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="SamTaal"></td>
+                <td id="Samwis"></td>
+                <td id="Samfinal"></td>
             </tr>
             <tr>
                 <td>Joyce</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="joyTaal"></td>
+                <td id="joywis"></td>
+                <td id="joyfinal"></td>
             </tr>
             <tr>
                 <td>Gareth</td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td  ><input type="text" id="garethTaal" onchange="gemiddelde()"></td>
+                <td id="garethwis"></td>
+                <td id="garethfinal"></td>
             </tr>       
         </table>
     </div>    

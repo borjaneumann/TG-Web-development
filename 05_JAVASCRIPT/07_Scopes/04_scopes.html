@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Opdracht 4 // Closures </h1>
+    <h2>Wat wordt er in de console gelogt? </h2>
+    <h3>Antwoord</h3>
+    <p>Volvo v40</p>
+    <p>function printCar creates a valiable and another function</p>
+
+    <script>
+        function printCar() {
+            carBrand = "Volvo";
+
+            return function(type) {
+            console.log(carBrand + " " + type);
+            }
+        }
+        const car = printCar();
+        car("v40");
+
+    </script>
+    
+</body>
+</html>
