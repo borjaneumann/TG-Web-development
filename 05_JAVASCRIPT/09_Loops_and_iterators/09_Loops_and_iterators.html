@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loops and iterations//Bubble sort</h1>
+    <div id="answer"></div>
+<script>
+    // //Opdracht 9
+    const array = [2,7,5,10,4,9,3,1,8,6];
+    
+    for (i=0;i<array.length;i++) {
+        for(j=0;j<array.length;j++)
+        // console.log(i,j);
+        if (array[i]<array[j]){
+            let temp=array[j];
+            array[j]=array[i];
+            array[i]=temp;   
+        }              
+    //    console.log(array) 
+    }
+
+    //or swaping elements of the array
+        for (j = 0; j < 11; j++) {
+            if (array[j] > array[j + 1]){
+                [array[j], array[j + 1]] = [array[j + 1], randomarrayArray[j]];//this syntaxis swaps element of the array!!
+                }
+            }
+        console.log(array);
+        
+    
+
+    //  if (a>b){
+    //         // let temp=a;
+    //         // a=b;
+    //         // b=temp;  
+            
+    //         // array.shift(a);
+    //         // array.splice(i,i-1);  
+    //         // console.log(b)
+    //         array.push(a);
+    //         continue;
+    //     }  
+
+
+    // numbers.push();
+    // let temp = fruits[0];
+    // fruits[0] = fruits[2];
+    // myData[2] = temp;   
+    // console.log(fruits)
+
+    
+    //OPDRACHT 9//swap first item and last item
+
+       
+
+</script>
+</body>
+</html>

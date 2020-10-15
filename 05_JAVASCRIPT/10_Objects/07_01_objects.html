@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Scissors, rock , paper opdracht</h1>
+    <h2>The winner is ...<span id="result"></span></h2>
+    <h3>Player 1</h3>
+    <input type="text" id="input" size="30" placeholder="Please enter: scissors, rock or paper">
+    <p id="player1">An word among scissors, rock and paper will come up here</p>
+    <h3>Player 2</h3>
+    <p id="player2">An word among scissors, rock and paper will come up here</p>
+    <button id="btn" onclick="play()">Click me to play</button>
+    
+
+<script>
+    function randomWord(){
+        const options = ['rock', 'paper', 'scissors'];
+        const randomOption = options[Math.floor(Math.random()*options.length)]
+        return randomOption;
+    }
+    function play(){
+        randomWord();
+        const player1= document.getElementById('input').value;
+        const player2= document.getElementById('player2').innerHTML=randomWord();
+        if (player1===player2){
+            document.getElementById('result').innerHTML='It is a draw!!';
+        }else if (player1==='rock' && player2==='scissors' ){
+            document.getElementById('result').innerHTML='Player 1!';
+        }else if (player1==='rock' && player2==='paper' ){
+            document.getElementById('result').innerHTML='Player 2!';
+        }else if (player1==='paper' && player2==='scissors' ){
+            document.getElementById('result').innerHTML='Player 2!';
+        }
+        else if (player1==='paper' && player2==='rock' ){
+            document.getElementById('result').innerHTML='Player 2!';
+        }else if (player1==='scissors' && player2==='paper' ){
+            document.getElementById('result').innerHTML='Player 1!';
+        }
+        else if (player1==='scissors' && player2==='rock' ){
+            document.getElementById('result').innerHTML='Player 2!';
+        }
+    }
+
+</script>
+
+</body>
+</html>

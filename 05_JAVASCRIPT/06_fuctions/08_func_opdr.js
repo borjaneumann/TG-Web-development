@@ -1,362 +1,234 @@
 
-
-//table Wiskunde
-//table Wiskunde
-let input;
-
-function wiskunde () {
-    input = document.getElementById('w1').value;
+function gradesColor(element,input) {
     if (input>0 && input < 5.5){
-        document.getElementById('w1').style.backgroundColor='red';
-        document.getElementById('w1').style.color='white';
+        element.style.backgroundColor='red';
+        element.style.color='white';
     }else if (input >= 5.5 && input <7.5){
-        document.getElementById('w1').style.backgroundColor='lightgreen';
-        document.getElementById('w1').style.color='white';
+        element.style.backgroundColor='lightgreen';
+        element.style.color='white';
     }else if (input > 7.5 && input<=10){
-        document.getElementById('w1').style.backgroundColor='#808000';
-        document.getElementById('w1').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('w1').style.backgroundColor='white';
-
-    }
-}
-function wiskunde1 () {
-    input = document.getElementById('w2').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('w2').style.backgroundColor='red';
-        document.getElementById('w2').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('w2').style.backgroundColor='lightgreen';
-        document.getElementById('w2').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('w2').style.backgroundColor='#808000';
-        document.getElementById('w2').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('w2').style.backgroundColor='white';
-
-    }
-}
-function wiskunde2 () {
-    input = document.getElementById('w3').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('w3').style.backgroundColor='red';
-        document.getElementById('w3').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('w3').style.backgroundColor='lightgreen';
-        document.getElementById('w3').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('w3').style.backgroundColor='#808000';
-        document.getElementById('w3').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('w3').style.backgroundColor='white';
-
-    }
-}
-function wiskunde3 () {
-    input = document.getElementById('w4').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('w4').style.backgroundColor='red';
-        document.getElementById('w4').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('w4').style.backgroundColor='lightgreen';
-        document.getElementById('w4').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('w4').style.backgroundColor='#808000';
-        document.getElementById('w4').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('w4').style.backgroundColor='white';
-
-    }
-}
-function wiskunde4 () {
-    input = document.getElementById('w5').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('w5').style.backgroundColor='red';
-        document.getElementById('w5').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('w5').style.backgroundColor='lightgreen';
-        document.getElementById('w5').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('w5').style.backgroundColor='#808000';
-        document.getElementById('w5').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('w5').style.backgroundColor='white';
-
+        element.style.backgroundColor='#808000';
+        element.style.color='white';
+    }else if (input==""){
+        element.style.backgroundColor='white';
     }
 }
 
-//Natuurkunde
-function natuur () {
-    input = document.getElementById('n1').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('n1').style.backgroundColor='red';
-        document.getElementById('n1').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('n1').style.backgroundColor='lightgreen';
-        document.getElementById('n1').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('n1').style.backgroundColor='#808000';
-        document.getElementById('n1').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('n1').style.backgroundColor='white';
+//Jan grades
+gradesColor(document.getElementById("janW"), document.getElementById("janW").value);
+gradesColor(document.getElementById("janN"), document.getElementById("janN").value);
+gradesColor(document.getElementById("janNe"),document.getElementById("janNe").value);
+gradesColor(document.getElementById("janE"), document.getElementById("janE").value);
 
-    }
+//Kim grades
+gradesColor(document.getElementById("kimW"), document.getElementById("kimW").value)
+gradesColor(document.getElementById("kimN"), document.getElementById("kimN").value)
+gradesColor(document.getElementById("kimNe"), document.getElementById("kimNe").value)
+gradesColor(document.getElementById("kimE"), document.getElementById("kimE").value)
+
+//Samantha grades
+gradesColor(document.getElementById("samW"), document.getElementById("samW").value)
+gradesColor(document.getElementById("samN"), document.getElementById("samN").value)
+gradesColor(document.getElementById("samNe"), document.getElementById("samNe").value)
+gradesColor(document.getElementById("samE"), document.getElementById("samE").value)
+
+//Joyce grades
+gradesColor(document.getElementById("joyW"), document.getElementById("joyW").value)
+gradesColor(document.getElementById("joyN"), document.getElementById("joyN").value)
+gradesColor(document.getElementById("joyNe"), document.getElementById("joyNe").value)
+gradesColor(document.getElementById("joyE"), document.getElementById("joyE").value)
+
+//Gareth grades
+gradesColor(document.getElementById("GarW"), document.getElementById("GarW").value);
+gradesColor(document.getElementById("GarN"), document.getElementById("GarN").value);
+gradesColor(document.getElementById("GarNe"), document.getElementById("GarNe").value);
+gradesColor(document.getElementById("GarE"), document.getElementById("GarE").value);
+
+
+//Jan average wiskunde en Talen
+function gemiddeldWJan(){
+    let num1 = Number(document.getElementById('janW').value);
+    let num2 = Number(document.getElementById('janN').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('janWisAve').innerHTML=averageTa;
+    return averageTa;
 }
-function natuur1 () {
-    input = document.getElementById('n2').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('n2').style.backgroundColor='red';
-        document.getElementById('n2').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('n2').style.backgroundColor='lightgreen';
-        document.getElementById('n2').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('n2').style.backgroundColor='#808000';
-        document.getElementById('n2').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('n2').style.backgroundColor='white';
-
-    }
+function gemiddeldVakJan(){
+    let num1 = Number(document.getElementById('janNe').value);
+    let num2 = Number(document.getElementById('janE').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('janTaalAve').innerHTML=averageTa;
+    return averageTa;
 }
-function natuur2 () {
-    input = document.getElementById('n3').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('n3').style.backgroundColor='red';
-        document.getElementById('n3').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('n3').style.backgroundColor='lightgreen';
-        document.getElementById('n3').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('n3').style.backgroundColor='#808000';
-        document.getElementById('n3').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('n3').style.backgroundColor='white';
-
-    }
+//Kim average wiskunde en Talen
+function gemiddeldWKim(){
+    let num1 = Number(document.getElementById('kimW').value);
+    let num2 = Number(document.getElementById('kimN').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('kimWisAve').innerHTML=averageTa;
+    return averageTa;
 }
-function natuur3 () {
-    input = document.getElementById('n4').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('n4').style.backgroundColor='red';
-        document.getElementById('n4').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('n4').style.backgroundColor='lightgreen';
-        document.getElementById('n4').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('n4').style.backgroundColor='#808000';
-        document.getElementById('n4').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('n4').style.backgroundColor='white';
-
-    }
+function gemiddeldVakKim(){
+    let num1 = Number(document.getElementById('kimNe').value);
+    let num2 = Number(document.getElementById('kimE').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('kimTaalAve').innerHTML=averageTa;
+    return averageTa;
 }
-function natuur4 () {
-    input = document.getElementById('n5').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('n5').style.backgroundColor='red';
-        document.getElementById('n5').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('n5').style.backgroundColor='lightgreen';
-        document.getElementById('n5').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('n5').style.backgroundColor='#808000';
-        document.getElementById('n5').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('n5').style.backgroundColor='white';
-
-    }
+//Samantha average wiskunde en Talen
+function gemiddeldWSam(){
+    let num1 = Number(document.getElementById('samW').value);
+    let num2 = Number(document.getElementById('samN').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('SamWisAve').innerHTML=averageTa;
+    return averageTa;
 }
-//Nederlands
-function nl1 () {
-    input = document.getElementById('nl1').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('nl1').style.backgroundColor='red';
-        document.getElementById('nl1').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('nl1').style.backgroundColor='lightgreen';
-        document.getElementById('nl1').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('nl1').style.backgroundColor='#808000';
-        document.getElementById('nl1').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('nl1').style.backgroundColor='white';
-
-    }
+function gemiddeldVakSam(){
+    let num1 = Number(document.getElementById('samNe').value);
+    let num2 = Number(document.getElementById('samE').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('SamTaalAve').innerHTML=averageTa;
+    return averageTa;
 }
-function nl2 () {
-    input = document.getElementById('nl2').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('nl2').style.backgroundColor='red';
-        document.getElementById('nl2').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('nl2').style.backgroundColor='lightgreen';
-        document.getElementById('nl2').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('nl2').style.backgroundColor='#808000';
-        document.getElementById('nl2').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('nl2').style.backgroundColor='white';
-
-    }
+//Joyce average wiskunde en Talen
+function gemiddeldWJoy(){
+    let num1 = Number(document.getElementById('joyW').value);
+    let num2 = Number(document.getElementById('joyN').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('joyWisAve').innerHTML=averageTa;
+    return averageTa;
 }
-function nl3 () {
-    input = document.getElementById('nl3').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('nl3').style.backgroundColor='red';
-        document.getElementById('nl3').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('nl3').style.backgroundColor='lightgreen';
-        document.getElementById('nl3').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('nl3').style.backgroundColor='#808000';
-        document.getElementById('nl3').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('nl3').style.backgroundColor='white';
-
-    }
+function gemiddeldVakJoy(){
+    let num1 = Number(document.getElementById('joyNe').value);
+    let num2 = Number(document.getElementById('joyE').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('joyTaalAve').innerHTML=averageTa;
+    return averageTa;
 }
-function nl4 () {
-    input = document.getElementById('nl4').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('nl4').style.backgroundColor='red';
-        document.getElementById('nl4').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('nl4').style.backgroundColor='lightgreen';
-        document.getElementById('nl4').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('nl4').style.backgroundColor='#808000';
-        document.getElementById('nl4').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('nl4').style.backgroundColor='white';
-
-    }
+//Gareth average wiskunde en Talen
+function gemiddeldWGar(){
+    let num1 = Number(document.getElementById('GarW').value);
+    let num2 = Number(document.getElementById('GarN').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('garethWisAve').innerHTML=averageTa;
+    return averageTa;
 }
-function nl5 () {
-    input = document.getElementById('nl5').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('nl5').style.backgroundColor='red';
-        document.getElementById('nl5').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('nl5').style.backgroundColor='lightgreen';
-        document.getElementById('nl5').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('nl5').style.backgroundColor='#808000';
-        document.getElementById('nl5').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('nl5').style.backgroundColor='white';
-
-    }
+function gemiddeldVakGar(){
+    let num1 = Number(document.getElementById('GarNe').value);
+    let num2 = Number(document.getElementById('GarE').value);
+    const averageTa = ((num1)+(num2))/2;    
+    document.getElementById('garethTaalAve').innerHTML=averageTa;
+    return averageTa;
 }
 
-//Engels
-function en1 () {
-    input = document.getElementById('en1').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('en1').style.backgroundColor='red';
-        document.getElementById('en1').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('en1').style.backgroundColor='lightgreen';
-        document.getElementById('en1').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('en1').style.backgroundColor='#808000';
-        document.getElementById('en1').style.color='white';
+//Final grades
+function passJan(){
+    let num1 = Number(document.getElementById('janWisAve').innerHTML);
+    let num2 = Number(document.getElementById('janTaalAve').innerHTML);
+    const average = ((num1)+(num2))/2;
+    if (average>5.5){
+        document.getElementById("janfinal").innerHTML='yes';
+        document.getElementById("janfinal").style.backgroundColor='lightgreen';
     }
-    else if (input==""){
-        document.getElementById('en1').style.backgroundColor='white';
+    else if (average<=5.5){
+        document.getElementById("janfinal").innerHTML='no';
+        document.getElementById("janfinal").style.backgroundColor='red';
+    }
+}
+function passKim(){
+    let num1 = Number(document.getElementById('kimWisAve').innerHTML);
+    let num2 = Number(document.getElementById('kimTaalAve').innerHTML);
+    const average = ((num1)+(num2))/2;
+    if (average>5.5){
+        document.getElementById("kimfinal").innerHTML='yes';
+        document.getElementById("kimfinal").style.backgroundColor='lightgreen';
+    }
+    else if (average<=5.5){
+        document.getElementById("kimfinal").innerHTML='no';
+        document.getElementById("kimfinal").style.backgroundColor='red';
+    }
+}
+function passSam(){
+    let num1 = Number(document.getElementById('SamWisAve').innerHTML);
+    let num2 = Number(document.getElementById('SamTaalAve').innerHTML);
+    const average = ((num1)+(num2))/2;
+    if (average>5.5){
+        document.getElementById("Samfinal").innerHTML='yes';
+        document.getElementById("Samfinal").style.backgroundColor='lightgreen';
+    }
+    else if (average<=5.5){
+        document.getElementById("Samfinal").innerHTML='no';
+        document.getElementById("Samfinal").style.backgroundColor='red';
+    }
+}
+function passJoy(){
+    let num1 = Number(document.getElementById('joyWisAve').innerHTML);
+    let num2 = Number(document.getElementById('joyTaalAve').innerHTML);
+    const average = ((num1)+(num2))/2;
+    if (average>5.5){
+        document.getElementById("joyfinal").innerHTML='yes';
+        document.getElementById("joyfinal").style.backgroundColor='lightgreen';
+    }
+    else if (average<=5.5){
+        document.getElementById("joyfinal").innerHTML='no';
+        document.getElementById("joyfinal").style.backgroundColor='red';
+    }
+}
+// function gradesColor2() {
+//     let input= Number(document.getElementById('janWisAve').value)
+//     let element= document.getElementById('janWisAve');
+//     if (input>0 && input < 5.5){
+//         element.style.backgroundColor='red';
+//         element.style.color='white';
+//     }else if (input >= 5.5 && input <7.5){
+//         element.style.backgroundColor='lightgreen';
+//         element.style.color='white';
+//     }else if (input > 7.5 && input<=10){
+//         element.style.backgroundColor='#808000';
+//         element.style.color='white';
+//     }else if (input==""){
+//         element.style.backgroundColor='white';
+//     }
+// }
 
+function passGar(){
+    let num1 = Number(document.getElementById('garethWisAve').innerHTML);
+    let num2 = Number(document.getElementById('garethTaalAve').innerHTML);
+    const average = ((num1)+(num2))/2;
+    if (average>5.5){
+        document.getElementById("garethfinal").innerHTML='yes';
+        document.getElementById("garethfinal").style.backgroundColor='lightgreen';
+    }
+    else if (average<=5.5){
+        document.getElementById("garethfinal").innerHTML='no';
+        document.getElementById("garethfinal").style.backgroundColor='red';
     }
 }
-function en2 () {
-    input = document.getElementById('en2').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('en2').style.backgroundColor='red';
-        document.getElementById('en2').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('en2').style.backgroundColor='lightgreen';
-        document.getElementById('en2').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('en2').style.backgroundColor='#808000';
-        document.getElementById('en2').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('en2').style.backgroundColor='white';
-    }
-}
-function en3 () {
-    input = document.getElementById('en3').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('en3').style.backgroundColor='red';
-        document.getElementById('en3').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('en3').style.backgroundColor='lightgreen';
-        document.getElementById('en3').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('en3').style.backgroundColor='#808000';
-        document.getElementById('en3').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('en3').style.backgroundColor='white';
-    }
-}
-function en4 () {
-    input = document.getElementById('en4').value;
-    if (input>0 && input < 5.5){
-        document.getElementById('en4').style.backgroundColor='red';
-        document.getElementById('en4').style.color='white';
-    }else if (input >= 5.5 && input <7.5){
-        document.getElementById('en4').style.backgroundColor='lightgreen';
-        document.getElementById('en4').style.color='white';
-    }else if (input > 7.5 && input<=10){
-        document.getElementById('en4').style.backgroundColor='#808000';
-        document.getElementById('en4').style.color='white';
-    }
-    else if (input==""){
-        document.getElementById('en4').style.backgroundColor='white';
-    }
-}
-function en5 () {
-    inputen5 = document.getElementById('en5').value;
-    if (inputen5>0 && inputen5 < 5.5){
-        document.getElementById('en5').style.backgroundColor='red';
-        document.getElementById('en5').style.color='white';
-    }else if (inputen5 >= 5.5 && inputen5 <7.5){
-        document.getElementById('en5').style.backgroundColor='lightgreen';
-        document.getElementById('en5').style.color='white';
-    }else if (inputen5 > 7.5 && inputen5<=10){
-        document.getElementById('en5').style.backgroundColor='#808000';
-        document.getElementById('en5').style.color='white';
-    }
-    else if (inputen5==""){
-        document.getElementById('en5').style.backgroundColor='white';
-    }
-}
-//Gemiddelde talen cijfer
+ 
 
-function gemiddelde( ){
-    nl5();
-    en5 ();
-    let sum =(parseInt(document.getElementById('en5').value) + parseInt(document.getElementById('nl5').value))/2;
 
-    
-    
-    
-    let proef = document.getElementById('garethTaal').innerContent='hola';
-    
-    return sum;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

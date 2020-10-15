@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Opdracht 2</h1>
+    <div id="clubs" class="clubs"></div>
+    <script>
+        // const clubInformatie = { 
+        //     clubName : "Marina",
+        //     sportType: " water sports",
+        //     aantalLeden :50 
+        //} 
+        // clubInformatie.adres='Hoofdstraat 12';
+        // clubInformatie.telefoonnur=31621232123;
+        // clubInformatie.contactPersoon='John Smith';
+        
+
+        //Using Assign
+        // const contactGegevens = {
+        //     adres : 'Hoofdstraat 12',
+        //     telefoonnr : 31621232123,
+        //     contactPersoon : 'John Smith'
+        // }
+        //  const clubInformatieExtended = Object.assign(clubInformatie, contactGegevens);
+
+        //using class
+
+        class Club{
+            constructor(clubName, sportType, aantalLeden){
+                this.clubName=clubName;
+                this.sportType=sportType;
+                this.aantalLeden=aantalLeden;
+            }
+        }
+        const club1= new Club ("Marina","water sports",50);
+       
+        class ContactGegevens{
+            constructor(adres, telefoonNr, contactPersoon, extraObjects){
+                this.adres=adres;
+                this.telefoonNr=telefoonNr;
+                this.contactPersoon=contactPersoon;
+                this.extraObjects=extraObjects;
+            }
+        }
+        const contactGegevens1= new ContactGegevens("Hoofdstraat 12","31621232123","John Smith", new Club ("Puerto","scuba diving",60)) 
+    
+    </script>
+</body>
+</html>

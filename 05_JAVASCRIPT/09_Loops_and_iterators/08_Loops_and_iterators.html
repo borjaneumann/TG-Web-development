@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Loops and iterations</h1>
+    <div id="answer"></div>
+<script>
+    // //Opdracht 8 Fibonacci
+    // fibonacci serie=0,0,1,1,2,3,5,8,13...
+ 
+    //This solution doesn't show 0,0,1
+    // let a =0;
+    // let b= 1;
+    // for ( i=1; i<50;i++){
+    //     let sum=a+b;
+    //     console.log(sum);
+    //     a=b;
+    //     b=sum;
+    // }
+
+    //This solution doesn't show 0,0,1
+    // let serie=[0,1];
+    // for (i=2;i<50;i++){
+    //     const addition = serie[i-2]+serie[i-1];
+    //     if (i>1){
+    //     serie.push(addition);
+    //     console.log(addition);
+    //     }   
+    // }
+
+    //This solution provides the whole serie but 50 times.
+    let serie=[0,1];
+    for (i=2;i<50;i++){
+        const addition = serie[i-2]+serie[i-1];
+        serie.push(addition);
+        console.log(serie);
+    }
+      
+        
+        
+    
+   
+    //test
+    // list = [3,6,8,9,12,11,22];
+    // sumList= list[2]-list[2-1];
+    // console.log(sumList);
+        
+             
+    
+        
+    
+
+
+</script>
+</body>
+</html>

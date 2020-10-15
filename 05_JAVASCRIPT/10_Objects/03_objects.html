@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Opdracht 3</h1>
+    <div id="clubs" class="clubs"></div>
+    <script>
+        class Club {
+            constructor(clubName, sportType,aantalLeden){
+            this.clubName=clubName;
+            this.sportType=sportType;
+            this.aantalLeden=aantalLeden;
+            }
+        }     
+        const amsterdam = new Club ("Marina"," water sports",50);
+        const rotterdam = new Club ("Puerto"," Gym",60);
+        const eindhoven = new Club ("Dam"," Hardlopen sports",570);
+        const utrecht = new Club ("Dijk","Fietsen",80);
+
+        const steden = [amsterdam,rotterdam, eindhoven, utrecht];
+        for (i=0;i<4;i++){
+            const stad = steden[i];
+            console.log(stad.clubName)
+        }
+       
+    </script>
+</body>
+</html>
