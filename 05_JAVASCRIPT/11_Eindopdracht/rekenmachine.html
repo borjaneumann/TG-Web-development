@@ -14,34 +14,34 @@
             </div>
             <div id="numbers">
                 <div id="first-line" class="line">
-                    <button id="ac" class="btn-light-grey smaller">AC</button>
-                    <button id="sign" class="btn-light-grey smaller">+/-</button>
-                    <button class="btn-light-grey smaller">%</button>
-                    <button class="btn-orange">/</button>
+                    <button id="ac" onclick="backToColor('ac')" class="btn-light-grey smaller">AC</button>
+                    <button id="sign" onclick="backToColor('sign')" class="btn-light-grey smaller">+/-</button>
+                    <button id="modulo" onclick="backToColor('modulo')" class="btn-light-grey smaller">%</button>
+                    <button  onclick="changeColor('division')" id="division" class="btn-orange">/</button>
                 </div>
                 <div id="second-line" class="line">
-                    <button id="btn-7" value="7" >7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button class="btn-orange">*</button>
+                    <button id="seven" onclick="backToColor('seven')" >7</button>
+                    <button id='eight' onclick="backToColor('eight')">8</button>
+                    <button id='nine' onclick="backToColor('nine')">9</button>
+                    <button onclick="changeColor('many')" id="many" class="btn-orange">*</button>
                 </div>
                 <div id="third-line" class="line">
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button id='minus' class="btn-orange">-</button>
+                    <button id='four' onclick="backToColor('four')">4</button>
+                    <button id='five' onclick="backToColor('five')">5</button>
+                    <button id='six' onclick="backToColor('six')">6</button>
+                    <button onclick="changeColor('minus')" id='minus' class="btn-orange">-</button>
                 </div>
                 <div id="fourth-line" class="line">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button class="btn-orange">+</button>
+                    <button id='one' onclick="backToColor('one')">1</button>
+                    <button id='two' onclick="backToColor('two')">2</button>
+                    <button id='three' onclick="backToColor('three')">3</button>
+                    <button onclick="changeColor('plus')" class="btn-orange" id="plus">+</button>
                 </div>
                 <div id="fifth-line" class="line">
-                    <button class="btn-double">0</button>
+                    <button id='zero' onclick="backToColor('zero')" class="btn-double">0</button>
                     <!-- <button >2</button> -->
-                    <button>.</button>
-                    <button id="equal" class="btn-orange" >=</button>
+                    <button id='dot' onclick="backToColor('dot')">.</button>
+                    <button id="equal" onclick="backToColor('equal')"class="btn-orange" >=</button>
                 </div>
                 
             
