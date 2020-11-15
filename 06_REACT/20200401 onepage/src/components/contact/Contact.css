@@ -1,0 +1,16 @@
+/* h1 {
+    color: black;
+} */
+
+.contact-container{
+    height: 400px;
+}
+label, input {
+    align-items: flex-end;
+    margin: 10px;
+    
+
+}
+form {
+    
+}

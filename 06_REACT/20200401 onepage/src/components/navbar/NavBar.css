@@ -1,0 +1,28 @@
+
+ul {
+    list-style-type: none;
+    display: flex; 
+}
+a{
+    text-decoration: none;
+}
+.navbar-link {
+    padding: 15px;
+}
+
+
+ul li {
+    color:black;
+    padding: 15px;
+    
+}
+.navbar {
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 20;
+}

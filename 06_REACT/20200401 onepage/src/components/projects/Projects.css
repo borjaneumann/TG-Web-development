@@ -1,0 +1,28 @@
+.carousel-img {
+    border-radius: 0;
+    width: 60%;
+    height: auto;
+}
+.projects-carousel{
+    background-color: lightblue;
+    width: 100%;
+    margin-right: -30px;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+h3 {
+    margin: 20px;
+    font-size: 2rem;
+    color: rgb(116, 116, 117);
+}
+.padding {
+    
+}
+.carousel-item-size {
+    border-radius: 50%;
+
+}
+.custom-dot-list-style {
+    position: absolute;
+    bottom: 40px;
+}

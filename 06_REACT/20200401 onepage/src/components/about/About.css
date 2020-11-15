@@ -1,0 +1,81 @@
+.about-container  {
+    margin: 70px 70px;
+    padding-top: 52px;
+    margin-top: -52px;
+    box-sizing: border-box;
+}
+#about{
+    font-size: 2rem;
+    margin-top: 20px;
+    color: rgb(116, 116, 117);
+}
+h3 {
+    margin: 20px;
+    font-size: 2rem;
+    color: rgb(116, 116, 117);
+}
+p {
+    font-size: 20px;
+}
+.about-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.about-personalInfo{
+    /* background-color: seashell; */
+    margin: 35px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid rgb(116, 116, 117);
+    border-radius: 10px;
+}
+img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+    
+}
+.about-skills{
+    background-color:lightblue;
+    border-radius: 10px;
+    margin: 35px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-text {
+    width: 70%;
+    margin-bottom: 20px ;
+    font-size: 16px;
+    text-align: justify;
+}
+.about-bar {
+    width: 80%;
+}
+@media only screen and (max-width: 700px) {
+    .about-info{
+        flex-wrap: wrap;
+    }
+    .about-skills{
+        width: 80%;
+    }
+    .about-personalInfo{
+        width: 80%;
+    }   
+}
+@media only screen and (max-width: 1100px) {
+    .about-info{
+        flex-wrap: wrap;
+    }
+    .about-skills{
+        width: 80%;
+    }
+    .about-personalInfo{
+        width: 80%;
+    }   
+}
